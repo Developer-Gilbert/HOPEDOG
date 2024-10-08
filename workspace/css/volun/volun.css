@@ -1,0 +1,87 @@
+header{
+  width: 1080px;
+  height: 120px;
+  background-color:green;
+  margin: 0 auto;
+}
+.volun-main{
+  width: 1080px;
+  height: 900px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+
+.volun{
+  
+}
+
+ul{
+  display: flex; /* 가로로 나열 */
+  list-style-type: none;
+  justify-content: center; /* 가운데 정렬 */
+  padding: 0; /* 기본 패딩 제거 */
+  margin: 0 auto; /* 중앙 정렬 */
+  width: fit-content; /* 내용에 맞춰 너비 조정 */
+}
+
+.volun-header{
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #9B805D; /* 아래쪽 경계선 추가 */
+  padding-bottom: 10px; /* 여백 추가 */
+}
+
+#volun-header2{
+  gap: 250px;
+}
+
+/* 분류, 제목, 작성자, 작성일 컨테이너 */
+.volun-container {
+  display: flex;
+  width: 100%;
+  height: 20px;
+  padding: 20px 0px;
+  border-bottom: 2px solid rgb(51, 51, 51);
+  /* border-top: 2px solid rgb(51, 51, 51); */
+  display: flex;
+}
+
+/* 분류 */
+.volun-container-cate {
+  flex-basis: 50px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  margin-left: 40px;
+}
+
+/* 제목 */
+.volun-container-title {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+/* 작성자, 작성일 */
+.volun-container-audate {
+  flex-basis: 100px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+/* 추천 */
+.volun-container-good {
+  flex-basis: 100px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
