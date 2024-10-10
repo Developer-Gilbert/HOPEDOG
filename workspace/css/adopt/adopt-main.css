@@ -1,4 +1,5 @@
 main{
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +7,7 @@ main{
 
 .adopt-main-size{
   width: 1080px;
-  height: 1600px;
+  min-height: 1800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,13 +58,22 @@ main{
 
 .adopt-banner3{
   width: 1000px;
-  height: 1100px;
+  height: 1300px;
   background-color: #F5EAD9;
   display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+.adopt-banner3-notice{
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  right: 330px;
+  bottom: 100px;
 }
 
 .adopt-banner3-inner{
@@ -76,15 +86,6 @@ main{
   flex-direction: column;
   justify-content: center;
   gap: 3px;
-}
-
-.adopt-banner3-notice{
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
-  position: relative;
-  right: 330px;
-  bottom: 100px;
 }
 
 .adopt-banner3-list{
