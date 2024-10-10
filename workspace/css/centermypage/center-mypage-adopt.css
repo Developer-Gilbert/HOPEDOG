@@ -33,15 +33,27 @@ a{
   cursor: pointer;
 }
 
-/* 게시판 제목 */
+/* 게시판 목록 */
 .center-member-profile-navboard{
   margin: 0 auto;
-  margin-top: 33px;
-  padding-bottom: 30px;
   border-bottom: 5px solid #9B805D;
   width: 850px;
-  /* height: 100px; */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-member-profile-navboard-ul{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+
+.center-member-profile-navboard-ul li{
+  margin: 20px;
   font-size: 28px;
+  cursor: pointer;
 }
 
 
@@ -118,6 +130,7 @@ a{
   margin: 20px 0 20px 0;
 }
 
+/* 버튼 */
 button {
   background-color: #F5EAD9;
   color: black;
