@@ -271,6 +271,8 @@ div#paging-wrap {
   background-color: white;
   width: 780px;
   height: 30px;
+	padding-bottom:10px;
+	border-bottom: 1px solid black;
 }
 
 .content{
