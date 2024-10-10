@@ -159,3 +159,11 @@ button {
 .info-title-box {
 	z-index: 1000;
 }
+
+.menu-flex:hover{
+	background-color: #9B805D;
+}
+
+.menu-flex:hover a{
+	color: white;
+}
