@@ -5,7 +5,7 @@ main{
   align-items: center;
 }
 
-.adopt-main-size{
+.review-main-size{
   width: 1080px;
   min-height: 850px;
   display: flex;
@@ -14,7 +14,7 @@ main{
 }
 
 
-.adopt-nav{
+.review-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,14 @@ main{
   border-bottom: solid 2px #9B805D;
 }
 
-.adopt-navList{
+.review-navList{
   font-size: 18px;
   font-weight: bold;
   width: 180px;
   text-align: center;
 }
 
-.protect-wirtebanner{
+.review-wirtebanner{
   background-color: #F5EAD9;
   width: 1080px;
   height: 70px;
@@ -44,7 +44,7 @@ main{
   font-weight: bold;
 }
 
-.protect-write-area{
+.review-write-area{
   width: 800px;
   height: auto;
   border: solid 1px #9B805D;
@@ -54,22 +54,7 @@ main{
   align-items: center;
 }
 
-.protect-write-box{
-  width: 780px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
-.protect-write-subtitle{
-  width: 170px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.protect-write-button-box{
+.review-write-button-box{
   width: 780px;
   height: 70px;
   display: flex;
