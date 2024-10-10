@@ -54,7 +54,7 @@ main{
   cursor: pointer;
 }
 
-.member-outbox-navbox {
+.member-inbox-navbox {
   margin-top: 50px;
   width: 1080px;
   height: 80px;
@@ -63,13 +63,16 @@ main{
   align-items: center;
 }
 
+#member-inbox {
+  margin-left: 20px;
+}
+
 .member-volun-nav-ul{
   display: flex;
   text-decoration: none;
   list-style: none;
   position: relative;
   z-index: 1;
-  /* margin-right: 150px; */
   font-size: 25px;
 }
 
@@ -98,6 +101,71 @@ main{
   margin: 0 auto;
 }
 
+html {
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.note-wrap {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.note-write .note-title {
+  margin-bottom: 20px;
+}
+
+.note-write input[type='text'] {
+  width: 90%;
+  padding: 15px;
+  font-size: 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.note-write .cont {
+  margin-bottom: 20px;
+}
+
+.note-write textarea {
+  width: 90%;
+  height: 200px;
+  padding: 15px;
+  font-size: 1.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left: 20px;
+}
+
+.note-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 /* '글쓰기' 버튼 파트 컨테이너 */
 .volun-admain-btuall {
   display: flex;
@@ -105,7 +173,6 @@ main{
   padding: 10px 0px;
   -webkit-box-pack: end;
   justify-content: flex-end;
-  margin-top: -60px; /* 위로 올리기 위해 음수 값 사용 */
 }
 
 /* '글쓰기' 버튼 */
@@ -120,13 +187,9 @@ main{
   color: black;
   background-color:#F5EAD9;
   border: 0px none;
-  margin-right: 145px;
-  margin-top: 200px;
+  margin-right: 15px;
+  margin-top: 20px;
   cursor: pointer;
-}
-
-.volun-admain-btu a {
-  color: black;
 }
 
 /* '글쓰기' 폰트사이즈 */
@@ -142,11 +205,6 @@ main{
 }
 
 .volun-admain-btu:hover {
-  background-color: #9B805D; /* 마우스를 올렸을 때 배경색 */
-  color: white; /* 마우스를 올렸을 때 텍스트 색상 */
-}
-
-.volun-admain-btu:hover a {
   background-color: #9B805D; /* 마우스를 올렸을 때 배경색 */
   color: white; /* 마우스를 올렸을 때 텍스트 색상 */
 }
