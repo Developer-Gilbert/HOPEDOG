@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마이페이지-입양</title>
-  <link rel="stylesheet" href="../../css/mypage/mypage-adopt.css">
+  <title>기부 - 글 상세페이지</title>
+  <link rel="stylesheet" href="../../css/donation/donation-detail.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
   <script defer src="../../js/main.js"></script>
@@ -69,79 +69,66 @@
       </ul>
     </div>
   </header>
+  
   <main>
-    <div class="member-profile-navbox">
-      <nav>
-        <ul class="member-profile-nav-ul">
-          <li id="profile"><a href="../../html/mypage/mypage-update.html">개인정보수정</li></a>
-          <li id="posts"><a href="../../html/mypage/mypage-posts.html">작성글조회</li></a>
-          <li id="volunteer"><a href="../../html/mypage/mypage-volunteer.html">봉사</li></a>
-          <li id="adopt"><a href="../../html/mypage/mypage-adopt.html">입양</li>
-          <div id="choice"></div></a>
-          <li id="inbox"><a href="../../html/mypage/mypage-inbox.html">쪽지함</li></a>
-          <li id="auth"><a href="../../html/mypage/mypage-auth.html">2차인증</li></a>
-          <li id="withdrawal"><a href="../../html/mypage/mypage-quit.html">회원탈퇴</li></a>
-        </ul>
-      </nav>
-    </div>
-    <div class="member-volun-navbox">
-      <nav>
-        <ul class="member-volun-nav-ul">
-          <li id="hours"><a href="#">입양신청</li>
-          <div id="volun-choice"></div></a>
-          <li id="volun-list"><a href="../../html/mypage/mypage-protect.html">임시보호신청</li></a>
-        </ul>
-      </nav>
-    </div>
-    <div id="line"></div>
+    <div class="post-guest-main">
+      <!--게시판 상단 (제목, 닉네임)-->
+      <div class="post-guest">
+        <div class="topTitle">
+          <h1>아픈 유기견을 도와주세요<span id="comment"> [2]</span></h1>
+        </div>
+        <div id="line"></div>
+        <div class="topTitle-box">
+          <div class="topTitle-mainbox">
+            <div class="topTitle-name"><strong>행복유기견센터</strong><small>등록일 2024-10-08 13:40</small></div>
+          </div>
+        </div>
+        <div class="post-textarea">
+          <span>10월 18일 남양주 행복한 유기견 센터 카풀 구합니다.</span><br>
+          <span>출발 시간과 장소는 얘기 해봐요. 인원수는 4명 가능합니다.</span>
+        </div>
+      </div>
+      <div class="volun-button">
+        <div class="volun-admain-btuall">
+          <button class="volun-admain-btu" type="button" onclick="location.href='#'">
+            <span class="volun-admain-btu-sp">수정</span>
+          </button>
+        </div>
+        <div class="volun-admain-btuall-delete">
+          <button class="volun-admain-btu-delete" type="button" onclick="location.href='#'">
+            <span class="volun-admain-btu-delete-sp">삭제</span>
+          </button>
+        </div>
+        <div class="volun-admain-btuall-complaint">
+          <button class="volun-admain-btu-complaint" type="button" onclick="location.href='#'">
+            <span class="volun-admain-btu-complaint-sp">신고</span>
+          </button>
+        </div>
+      </div>
+      <div class="volun-commentInfo">
+        <div class="comment-comment-list">
+          <div>
+            <div>
+              <div><strong>행복이</strong></div>
+              <div><span>저요</span></div>
+                
 
-    <!-- 게시글 리스트 영역 -->
-    <div class="member-profile-cumuboard-container">
-      <!-- 게시글 제목 -->
-      <div>
-        <ul class="member-profile-cumuboard-titlebox">
-          <li><b>입양 신청서</b></li>
-          <li><b>상태</b></li>
-          <li><b>작성일</b></li>
-        </ul>
-      </div>
-      <!-- 게시글 목록 -->
-      <div class="member-profile-cumuboard-contentsbox">
-        <ul class="member-profile-cumuboard-content">
-          <li>
-            <div>
-              <ul class="member-profile-cumuboard-contentbox">
-                <li><a href="#">입양 신청서</li></a>
-                <li>수락</li>
-                <li>2024.07.29</li>
-              </ul>
+              <div><small>2024-10-08 14:50</small></div>
+              
             </div>
-          </li>
-          <li>
+            <br>
             <div>
-              <ul class="member-profile-cumuboard-contentbox">
-                <li><a href="#">입양 신청서</li></a>
-                <li>검토중</li>
-                <li>2024.07.28</li>
-              </ul>
+              <div><strong>아가다</strong></div>
+              <div><span>저요</span></div>
+
+              <div><small>2024-10-08 14:51</small></div>
             </div>
-          </li>
-          
-        </ul>
-      </div>
-      <!-- 페이지네이션 -->
-      <div class="pagination">
-        <button class="prev">◀</button>
-        <button class="page">1</button>
-        <button class="page">2</button>
-        <button class="page">3</button>
-        <button class="page">4</button>
-        <button class="page">5</button>
-        <button class="next">▶</button>
+            <br>
+
+          </div>
       </div>
     </div>
 
-  </main>
   <footer>
     <div class="footer-links">
       <a href="../member/term.html">이용약관</a> |
