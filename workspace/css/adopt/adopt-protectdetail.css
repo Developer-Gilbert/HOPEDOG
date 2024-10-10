@@ -5,7 +5,7 @@ main{
   align-items: center;
 }
 
-.adopt-main-size{
+.protect-main-size{
   width: 1080px;
   min-height: 500px;
   display: flex;
@@ -14,7 +14,7 @@ main{
 }
 
 
-.adopt-nav{
+.protect-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,14 @@ main{
   border-bottom: solid 2px #9B805D;
 }
 
-.adopt-navList{
+.protect-navList{
   font-size: 18px;
   font-weight: bold;
   width: 180px;
   text-align: center;
 }
 
-.adopt-detail-box1{
+.protect-detail-box1{
   width: 1080px;
   height: 100px;
   display: flex;
@@ -43,7 +43,7 @@ main{
   border-bottom: 2px solid #9B805D;
 }
 
-.adopt-detail-title{
+.protect-detail-title{
   width: 745px;
   height: 60px;
   font-size: 24px;
@@ -52,7 +52,7 @@ main{
   align-items: center;
 }
 
-.adopt-detail-info{
+.protect-detail-info{
   width: 745px;
   height: 15px;
   font-size: 14px;
@@ -62,7 +62,7 @@ main{
   align-items: center;
 }
 
-.adopt-detail-box2{
+.protect-detail-box2{
   width: 1080px;
   min-height: 500px;
   border-bottom: 2px solid #9B805D;
@@ -71,7 +71,7 @@ main{
   align-items: center;
 }
 
-.adopt-detail-content{
+.protect-detail-content{
   background-color: white;
   width: 745px;
   min-height: 450px;
@@ -80,19 +80,19 @@ main{
   flex-direction: column;
 }
 
-.adopt-detail-basicinfo{
+.protect-detail-basicinfo{
   font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.adopt-detail-basicinfo-title{
+.protect-detail-basicinfo-title{
   font-size: 18px;
   font-weight: bold;
 }
 
-.adopt-detail-box3{
+.protect-detail-box3{
   width: 745px;
   height: auto;
   display: flex;
@@ -100,7 +100,7 @@ main{
   align-items: center;
 }
 
-.adopt-modify-button{
+.protect-modify-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -111,12 +111,12 @@ main{
   cursor: pointer;
 }
 
-.adopt-modify-button:hover {
+.protect-modify-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adopt-delete-button{
+.protect-delete-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -127,12 +127,12 @@ main{
   cursor: pointer;
 }
 
-.adopt-delete-button:hover {
+.protect-delete-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adopt-end-button{
+.protect-end-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -143,17 +143,17 @@ main{
   cursor: pointer;
 }
 
-.adopt-end-button:hover {
+.protect-end-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adopt-detail-box4{
+.protect-detail-box4{
   width: 745px;
   height: auto;
 }
 
-.adopt-detail-commentNum{
+.protect-detail-commentNum{
   width: 745px;
   height: 35px;
   display: flex;
@@ -162,30 +162,30 @@ main{
   font-weight: bold;
 }
 
-.adopt-detail-commentbox{
+.protect-detail-commentbox{
   width: 745px;
   height: auto;
 }
 
-.adopt-detail-name{
+.protect-detail-name{
   font-size: 14px;
   font-weight: bold;
 }
 
-.adopt-detail-comment{
+.protect-detail-comment{
   font-size: 14px;
 }
 
-.adopt-detail-date{
+.protect-detail-date{
   font-size: 12px;
 }
 
-.adopt-detail-commentregi{
+.protect-detail-commentregi{
   width: 620px;
   height: 50px;
 }
 
-.adopt-commentregi-button{
+.protect-commentregi-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -196,7 +196,7 @@ main{
   cursor: pointer;
 }
 
-.adopt-commentregi-button:hover {
+.protect-commentregi-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
