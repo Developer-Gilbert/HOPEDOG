@@ -171,6 +171,7 @@ div.board_content {
 .info-row {
   display: flex;
   padding: 10px;
+	height: 24px;
   border-bottom: 1px solid #F5EAD9;
 }
 
@@ -204,4 +205,9 @@ div.board_content {
 	padding: 5px 10px;
 	border-radius: 15px;
 	background-color: #F5EAD9;	
+}
+
+.board-info-more:hover{
+	color: white;
+	background-color: #9B805D;	
 }
