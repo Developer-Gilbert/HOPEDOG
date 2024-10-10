@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 취소 버튼
   cancelBtn.addEventListener('click', function() {
     if (confirm('회원가입을 취소하시겠습니까?')) {
-      window.location.href = '../main.html'; 
+      window.location.href = '../../html/main/main.html'; 
     }
   });
 
