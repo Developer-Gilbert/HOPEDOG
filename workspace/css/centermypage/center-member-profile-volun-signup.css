@@ -60,7 +60,7 @@ a {
   flex-direction: column;
   /* align-items: center; */
   border: 1px solid black;
-  /* height: 800px; */
+  /* height: 800px;s */
   /* padding-left: 150px; */
 }
 
@@ -68,6 +68,36 @@ a {
   margin: 5px 0px;
   height: 35px;
   background-color: gainsboro;
+}
+
+.center-member-profile-volun-container form input[type="number"] {
+  margin: 5px 0px;
+  height: 35px;
+  background-color: gainsboro;
+}
+
+.center-member-profile-volun-container form input[type="time"] {
+  margin: 5px 0px;
+  height: 35px;
+  background-color: gainsboro;
+}
+
+.time-input {
+  margin: 5px 0px;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+}
+
+.readonly {
+  background-color: gainsboro; /* readonly처럼 보이게 스타일 */
+  pointer-events: none; /* 클릭 불가능하게 설정 */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .center-member-profile-volun-container #religion {

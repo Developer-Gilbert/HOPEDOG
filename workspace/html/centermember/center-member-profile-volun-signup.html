@@ -43,7 +43,7 @@
             <input type="button" class="middle-button" value="여">
           </div>
 
-          <input type="text" id="phonenumber" value="휴대전화" readonly>
+          <input type="number" id="phonenumber" value="01000000000" readonly>
 
           <div>
             <input type="text" id="birth" value="생년월일" readonly>
@@ -73,7 +73,11 @@
               <button class="mini-button">금</button>
             </div>
           </div>
-          <input type="text" id="time" value="시간" readonly>
+          <label for="hourInput">
+            <select id="hourInput" class="time-input readonly">
+              <option value="">선택</option>
+            </select>
+          </label>
           <div>
             <div class="hope-select-area">
               <p>희망봉사</p>
@@ -104,5 +108,6 @@
   <footer></footer>
 
 </body>
+<script src="/js/centermypage/center-member-profile-volun-signup.js"></script>
 
 </html>
