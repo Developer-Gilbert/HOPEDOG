@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!usernameInput.classList.contains('error') && !passwordInput.classList.contains('error')) {
          
           alert('로그인되었습니다.');
-          window.location.href = '../main.html';
+          window.location.href = '../../html/main/main.html';
       }
   });
 
