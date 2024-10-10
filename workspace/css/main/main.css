@@ -72,7 +72,7 @@ main {
 }
 
 .donation-card h3 {
-  color: #FF9B50;
+  color: #5093ff;
   font-size: 16px; 
   margin-bottom: 8px;
 }
@@ -96,7 +96,7 @@ main {
 .more-link {
   display: inline-block;
   margin-top: 15px;
-  color: #FF9B50;
+  color: #50ff90;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px; 
@@ -257,7 +257,7 @@ main {
 
 .more-link {
   display: inline-block;
-  color: #FF9B50;
+  color: #50a8ff;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;

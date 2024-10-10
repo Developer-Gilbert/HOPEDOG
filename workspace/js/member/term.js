@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 취소 버튼 클릭 이벤트
   cancelBtn.addEventListener('click', function() {
       if (confirm('약관 동의를 취소하시겠습니까?')) {
-          window.location.href = '../main.html'; 
+          window.location.href = '../../html/main/main.html'; 
       }
   });
 
