@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>카풀 상세페이지(비회원)</title>
-  <link rel="stylesheet" href="../../css/volun/volun-post-member.css">
+  <title>게시판 글쓰기</title>
+  <link rel="stylesheet" href="../../css/volun/volun-post-write.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
 </head>
-<!-- 수정 , 삭제 , 신고 버튼 눌렀을 떄 로그인 안내 알터창 추가 -->
 
 <body>
   <header class="header">
@@ -69,62 +68,30 @@
     </div>
   </header>
   <main>
-    <div class="post-guest-main">
-      <!--게시판 상단 (제목, 닉네임)-->
-      <div class="post-guest">
-        <div class="topTitle">
-          <h1>10월 18일 남양주 행복한유기견 센터 카풀 구해요<span id="comment">[5]</span></h1>
-        </div>
-        <div class="topTitle-box">
-          <div class="topTitle-mainbox">
-            <div class="topTitle-name"><strong>프린세스</strong><small>등록일 2024-10-08 13:40</small></div>
+    <div class="volun-main">
+
+
+      <!-- 임시보호 글 등록 -->
+      <div class="protect-wirtebanner">글 작성</div>
+
+      <br>
+
+      <!-- 글작성 박스 -->
+      <div class="protect-write-area">
+        <form action="링크" method="post">
+          <br>
+          <!-- 제목/본문 api 사용이라 지울 예정 -->
+          <br><br>
+          <div><input type="text" placeholder="제목을 입력해주세요" class="title"></div>
+          <br>
+          <div><input type="text" class="content" placeholder="api쓸거라 대충 만듦"></div>
+
+          <!-- 등록/취소 버튼 -->
+          <div class="protect-write-button-box">
+            <button class="review-write-button" type="button" onclick="location.href='../../html/volun/volun-main-guest.html'">등록</button>
+            <button class="review-cancle-button" type="button" onclick="location.href='../../html/volun/volun-main-guest.html'">취소</button>
           </div>
-        </div>
-        <div class="post-textarea">
-          <span>10월 18일 남양주 행복한 유기견 센터 카풀 구합니다.</span><br>
-          <span>출발 시간과 장소는 얘기 해봐요. 인원수는 4명 가능합니다.</span>
-        </div>
-      </div>
-      <div class="volun-button">
-        <div class="volun-admain-btuall">
-          <button class="volun-admain-btu" type="button" onclick="location.href='#'">
-            <span class="volun-admain-btu-sp">수정</span>
-          </button>
-        </div>
-        <div class="volun-admain-btuall-delete">
-          <button class="volun-admain-btu-delete" type="button" onclick="location.href='#'">
-            <span class="volun-admain-btu-delete-sp">삭제</span>
-          </button>
-        </div>
-        <div class="volun-admain-btuall-complaint">
-          <button class="volun-admain-btu-complaint" type="button" onclick="location.href='#'">
-            <span class="volun-admain-btu-complaint-sp">신고</span>
-          </button>
-        </div>
-      </div>
-      <div class="volun-commentInfo">
-        <div class="comment-count">댓글 <span id="count">2</span></div>
-        <div class="comment-comment-list">
-          <div>
-            <div>
-              <div><strong>행복이</strong></div>
-              <div><span>저요</span></div>
-
-
-              <div><small>2024-10-08 14:50</small></div>
-
-            </div>
-            <br>
-            <div>
-              <div><strong>아가다</strong></div>
-              <div><span>저요</span></div>
-
-              <div><small>2024-10-08 14:51</small></div>
-            </div>
-            <br>
-
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </main>
