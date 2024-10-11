@@ -77,7 +77,7 @@ a{
 }
 
 /* 읽기전용 */
-input{
+input {
   background-color: #f0f0f0; /* 배경색 변경 */
   color: #a0a0a0; /* 텍스트 색상 변경 */
   cursor: not-allowed; /* 커서 스타일 변경 */
@@ -92,7 +92,7 @@ input{
   align-items: center;
 }
 
-.adoptrequest-main-size{
+.protectrequest-main-size{
   width: 1080px;
   min-height: 1200px;
   display: flex;
@@ -101,7 +101,7 @@ input{
 }
 
 
-.adoptrequest-nav{
+.protectrequest-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,14 +113,14 @@ input{
   border-bottom: solid 2px #9B805D;
 }
 
-.adoptrequest-navList{
+.protectrequest-navList{
   font-size: 18px;
   font-weight: bold;
   width: 180px;
   text-align: center;
 }
 
-.adoptrequest-wirtebanner{
+.protectrequest-wirtebanner{
   background-color: #F5EAD9;
   width: 1080px;
   height: 70px;
@@ -131,7 +131,7 @@ input{
   font-weight: bold;
 }
 
-.adoptrequest-write-area{
+.protectrequest-write-area{
   width: 800px;
   min-height: 3300px;
   border: solid 1px #9B805D;
@@ -142,7 +142,7 @@ input{
   gap: 15px;
 }
 
-.adoptrequest-content-box{
+.protectrequest-content-box{
   width: 680px;
   height: 50px;
   display: flex;
@@ -150,7 +150,7 @@ input{
   align-items: center;
 }
 
-.adoptrequest-content-title{
+.protectrequest-content-title{
   width: 170px;
   height: 30px;
   display: flex;
@@ -158,17 +158,17 @@ input{
   font-size: 14px;
 }
 
-.adoptrequest-input-small{
+.protectrequest-input-small{
   width: 400px;
   height: 25px;
 }
 
-.adoptrequest-input-small2{
+.protectrequest-input-small2{
   width: 300px;
   height: 25px;
 }
 
-.adoptrequest-agreement-box{
+.protectrequest-agreement-box{
   border: solid 1px #9B805D;
   border-radius: 15px;
   width: 680px;
@@ -182,7 +182,7 @@ p{
   font-size: 12px;
 }
 
-.adoptrequest-agreement-box2{
+.protectrequest-agreement-box2{
   border: solid 1px #9B805D;
   border-radius: 15px;
   width: 680px;
@@ -191,7 +191,7 @@ p{
   justify-content: center;
 }
 
-.adoptrequest-content-title2{
+.protectrequest-content-title2{
   width: 650px;
   height: 35px;
   display: flex;
@@ -199,12 +199,12 @@ p{
   font-size: 14px;
 }
 
-.adoptrequest-input-big{
+.protectrequest-input-big{
   width: 600px;
   height: 70px;
 }
 
-.adoptrequest-agreement-box2{
+.protectrequest-agreement-box2{
   border: solid 1px #9B805D;
   border-radius: 15px;
   width: 680px;
@@ -214,7 +214,7 @@ p{
   justify-content: center;
 }
 
-.adoptrequest-search-button{
+.protectrequest-search-button{
   width: 50px;
   height: 28px;
   background-color: #F5EAD9;
@@ -224,12 +224,12 @@ p{
   cursor: pointer;
 }
 
-.adoptrequest-search-button:hover {
+.protectrequest-search-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adoptrequest-buttonbox{
+.protectrequest-buttonbox{
   width: 680px;
   height: 50px;
   display: flex;
@@ -238,7 +238,7 @@ p{
   gap: 35px;
 }
 
-.adoptrequest-button{
+.protectrequest-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -249,7 +249,7 @@ p{
   cursor: pointer;
 }
 
-.adoptrequest-button:hover {
+.protectrequest-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
