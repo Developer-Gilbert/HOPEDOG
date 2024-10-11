@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마이페이지-입양</title>
-  <link rel="stylesheet" href="../../css/mypage/mypage-protect.css">
+  <title>마이페이지-받은쪽지</title>
+  <link rel="stylesheet" href="../../css/mypage/mypage-notebox-detail.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
-  <script defer src="../../js/main.js"></script>
 </head>
 
 <body>
@@ -76,81 +75,75 @@
           <li id="profile"><a href="../../html/mypage/mypage-update.html">개인정보수정</li></a>
           <li id="posts"><a href="../../html/mypage/mypage-posts.html">작성글조회</li></a>
           <li id="volunteer"><a href="../../html/mypage/mypage-volunteer.html">봉사</li></a>
-          <li id="adopt"><a href="../../html/mypage/mypage-adopt.html">입양</li>
+          <li id="adopt"><a href="../../html/mypage/mypage-adopt.html">입양</li></a>
+          <li id="inbox"><a href="#">쪽지함</li>          
           <div id="choice"></div></a>
-          <li id="inbox"><a href="../../html/mypage/mypage-inbox.html">쪽지함</li></a>
           <li id="auth"><a href="../../html/mypage/mypage-auth.html">2차인증</li></a>
           <li id="withdrawal"><a href="../../html/mypage/mypage-quit.html">회원탈퇴</li></a>
         </ul>
       </nav>
     </div>
-    <div class="member-volun-navbox">
+    <div class="member-inbox-navbox">
       <nav>
         <ul class="member-volun-nav-ul">
-          <li id="hours"><a href="../../html/mypage/mypage-adopt.html">입양신청</li></a>
-          <li id="volun-list"><a href="../../html/mypage/mypage-protect.html">임시보호신청</li>
+          <li id="member-inbox"><a href="../../html/mypage/mypage-inbox.html">받은 쪽지</li>
             <div id="volun-choice"></div></a>
+          <li id="member-outbox"><a href="../../html/mypage/mypage-outbox.html">보낸 쪽지</li></a>
         </ul>
       </nav>
     </div>
     <div id="line"></div>
 
-    <!-- 게시글 리스트 영역 -->
-    <div class="member-profile-cumuboard-container">
-      <!-- 게시글 제목 -->
-      <div>
-        <ul class="member-profile-cumuboard-titlebox">
-          <li><b>임시보호 신청서</b></li>
-          <li><b>상태</b></li>
-          <li><b>작성일</b></li>
-        </ul>
-      </div>
-      <!-- 게시글 목록 -->
-      <div class="member-profile-cumuboard-contentsbox">
-        <ul class="member-profile-cumuboard-content">
-          <li>
-            <div>
-              <ul class="member-profile-cumuboard-contentbox">
-                <li><a href="../../html/mypage/mypage-protect-form.html">임시보호 신청서</li></a>
-                <li>수락</li>
-                <li>2024.07.29</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <div>
-              <ul class="member-profile-cumuboard-contentbox">
-                <li><a href="../../html/mypage/mypage-protect-form.html">임시보호 신청서</li></a>
-                <li>검토중</li>
-                <li>2024.07.28</li>
-              </ul>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      <!-- 페이지네이션 -->
-      <div class="pagination">
-        <button class="prev">◀</button>
-        <button class="page">1</button>
-        <button class="page">2</button>
-        <button class="page">3</button>
-        <button class="page">4</button>
-        <button class="page">5</button>
-        <button class="next">▶</button>
-      </div>
-    </div>
 
-  </main>
-  <footer>
-    <div class="footer-links">
-      <a href="../member/term.html">이용약관</a> |
-      <a href="../member/term.html">개인정보처리방침</a>
+<div class="note-wrap">
+  <div class="note-title">
+    <h1>쪽지</h1>
+  </div>
+  <form method="get">
+    <div class="note-write-wrap">
+      <div class="note-write">
+        <div class="note-title">
+          제목
+        </div>
+        <div class="note-title">
+          닉네임
+        </div>
+        <div class="note-cont">
+          날짜
+        </div>
+        <div class="note-cont">
+          내용
+        </div>
+      </div>
     </div>
-    <h6>(06236)서울특별시 강남구 테헤란로 146, 신한은행 건물 (3층) | 대표이사 강수정 김규열 김민채 신승민 이기철 정시우 | 회사업자등록번호104-81-4522690 |<br>
-      통신판매업신고번호 2017-서울용산-066 | 사업자정보확인호스팅사업자 NT넥스트레벨 대표이메일 nextlevel_224@next.com<br>
-      © NEXT LEVEL. All Rights Reserved</h6>
-  </footer>
+    <div class="volun-admain-btuall">
+      <a href="../../html/mypage/mypage-inbox.html">
+      <button class="volun-admain-btu" type="button">
+        <span class="volun-admain-btu-sp">이전</span>
+      </button></a>
+      <button class="volun-admain-btu" type="button">
+        <a href="#"><span class="volun-admain-btu-sp">답장하기</span></a>
+      </button>
+    </div>
+  </form>
+</div>
+
+
+</main>
+
 </body>
+<footer>
+  <div class="footer-links">
+    <a href="../member/term.html">이용약관</a> |
+    <a href="../member/term.html">개인정보처리방침</a>
+  </div>
+  <h6>(06236)서울특별시 강남구 테헤란로 146, 신한은행 건물 (3층) | 대표이사 강수정 김규열 김민채 신승민 이기철 정시우 | 회사업자등록번호104-81-4522690 |<br>
+    통신판매업신고번호 2017-서울용산-066 | 사업자정보확인호스팅사업자 NT넥스트레벨 대표이메일 nextlevel_224@next.com<br>
+    © NEXT LEVEL. All Rights Reserved</h6>
+</footer>
+
+
+<script defer src="../../js/main/header.js"></script>
+<script defer src="../../js/mypage/mypage-inbox.js"></script>
 
 </html>
