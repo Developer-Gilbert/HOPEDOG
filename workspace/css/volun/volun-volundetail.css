@@ -5,7 +5,7 @@ main{
   align-items: center;
 }
 
-.adopt-main-size{
+.volun-main-size{
   width: 1080px;
   min-height: 500px;
   display: flex;
@@ -14,7 +14,7 @@ main{
 }
 
 
-.adopt-nav{
+.volun-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,14 @@ main{
   border-bottom: solid 2px #9B805D;
 }
 
-.adopt-navList{
+.volun-navList{
   font-size: 18px;
   font-weight: bold;
   width: 180px;
   text-align: center;
 }
 
-.adopt-detail-box1{
+.volun-detail-box1{
   width: 1080px;
   height: 100px;
   display: flex;
@@ -43,7 +43,7 @@ main{
   border-bottom: 2px solid #9B805D;
 }
 
-.adopt-detail-title{
+.volun-detail-title{
   width: 745px;
   height: 60px;
   font-size: 24px;
@@ -52,7 +52,7 @@ main{
   align-items: center;
 }
 
-.adopt-detail-info{
+.volun-detail-info{
   width: 745px;
   height: 15px;
   font-size: 14px;
@@ -62,7 +62,7 @@ main{
   align-items: center;
 }
 
-.adopt-detail-box2{
+.volun-detail-box2{
   width: 1080px;
   min-height: 500px;
   border-bottom: 2px solid #9B805D;
@@ -71,7 +71,7 @@ main{
   align-items: center;
 }
 
-.adopt-detail-content{
+.volun-detail-content{
   background-color: white;
   width: 745px;
   min-height: 450px;
@@ -80,19 +80,19 @@ main{
   flex-direction: column;
 }
 
-.adopt-detail-basicinfo{
+.volun-detail-basicinfo{
   font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.adopt-detail-basicinfo-title{
+.volun-detail-basicinfo-title{
   font-size: 18px;
   font-weight: bold;
 }
 
-.adopt-detail-box3{
+.volun-detail-box3{
   width: 745px;
   height: auto;
   display: flex;
@@ -100,7 +100,7 @@ main{
   align-items: center;
 }
 
-.adopt-modify-button{
+.volun-modify-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -111,12 +111,12 @@ main{
   cursor: pointer;
 }
 
-.adopt-modify-button:hover {
+.volun-modify-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adopt-delete-button{
+.volun-delete-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -127,12 +127,12 @@ main{
   cursor: pointer;
 }
 
-.adopt-delete-button:hover {
+.volun-delete-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adopt-end-button{
+.volun-end-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -143,17 +143,17 @@ main{
   cursor: pointer;
 }
 
-.adopt-end-button:hover {
+.volun-end-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.adopt-detail-box4{
+.volun-detail-box4{
   width: 745px;
   height: auto;
 }
 
-.adopt-detail-commentNum{
+.volun-detail-commentNum{
   width: 745px;
   height: 35px;
   display: flex;
@@ -162,30 +162,30 @@ main{
   font-weight: bold;
 }
 
-.adopt-detail-commentbox{
+.volun-detail-commentbox{
   width: 745px;
   height: auto;
 }
 
-.adopt-detail-name{
+.volun-detail-name{
   font-size: 14px;
   font-weight: bold;
 }
 
-.adopt-detail-comment{
+.volun-detail-comment{
   font-size: 14px;
 }
 
-.adopt-detail-date{
+.volun-detail-date{
   font-size: 12px;
 }
 
-.adopt-detail-commentregi{
+.volun-detail-commentregi{
   width: 620px;
   height: 50px;
 }
 
-.adopt-commentregi-button{
+.volun-commentregi-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -196,13 +196,13 @@ main{
   cursor: pointer;
 }
 
-.adopt-commentregi-button:hover {
+.volun-commentregi-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
 /* 댓글버튼 */
-.adopt-comment-button{
+.volun-comment-button{
   width: 50px;
   height: 25px;
   background-color: #F5EAD9;
@@ -213,19 +213,19 @@ main{
   cursor: pointer;
 }
 
-.adopt-comment-button:hover {
+.volun-comment-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
 /* 댓글수정 input 박스 */
-.adopt-modify-comment{
+.volun-modify-comment{
   width: 300px;
   height: 30px;
 }
 
 /* 신청버튼박스 */
-.adopt-submit-box{
+.volun-submit-box{
   width: 745px;
   height: 50px;
   display: flex;
@@ -233,7 +233,7 @@ main{
   justify-content: center;
 }
 
-.adopt-submit-button{
+.volun-submit-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -244,7 +244,7 @@ main{
   cursor: pointer;
 }
 
-.adopt-submit-button:hover {
+.volun-submit-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
