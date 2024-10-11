@@ -94,18 +94,6 @@
   color: white;
 }
 
-/* 지울꺼임 제목/본문 api사용예정 */
-.title{
-  background-color: white;
-  width: 780px;
-  height: 50px;
-}
-
-.content{
-  background-color: white;
-  width: 780px;
-  height: 400px;
-}
 
 /* 썸머노트 크기 js에서도 설정해야함 */
 .content{
