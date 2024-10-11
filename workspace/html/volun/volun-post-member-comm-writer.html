@@ -37,11 +37,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="../adopt/adopt-main.html">입양</a>
+            <a href="../volun/volun-main.html">입양</a>
             <div class="dropdown-content">
-              <a href="../adopt/adopt-adopt.html">안심 입양</a>
-              <a href="../adopt/adopt-protection.html">임시 보호</a>
-              <a href="../adopt/adopt-review.html">후기</a>
+              <a href="../volun/volun-volun.html">안심 입양</a>
+              <a href="../volun/volun-protection.html">임시 보호</a>
+              <a href="../volun/volun-review.html">후기</a>
             </div>
           </li>
           <li class="nav-item">
@@ -70,26 +70,26 @@
   </header>
   <main>
     <!-- 입양 메인 크기 -->
-    <div class="adopt-main-size">
+    <div class="volun-main-size">
       <!-- 입양/임보/후기 게시판 바 -->
-      <div class="adopt-nav">
-        <div class="adopt-navList">봉사</div>
-        <div class="adopt-navList1">카풀</div>
+      <div class="volun-nav">
+        <div class="volun-navList">봉사</div>
+        <div class="volun-navList1">카풀</div>
       </div>
 
       <!-- 제목/작성자/등록일 크기 -->
-      <div class="adopt-detail-box1">
-        <div class="adopt-detail-title">10월18일 남양주 행복한유기견 센터 카풀멤버 구해요</div>
-        <div class="adopt-detail-info"><span>작성자 : 안성재</span>
+      <div class="volun-detail-box1">
+        <div class="volun-detail-title">10월18일 남양주 행복한유기견 센터 카풀멤버 구해요</div>
+        <div class="volun-detail-info"><span>작성자 : 안성재</span>
           <sapn>등록일 : 2024-10-10</sapn>
         </div>
       </div>
 
       <!-- 글내용 크기 -->
-      <div class="adopt-detail-box2">
-        <div class="adopt-detail-content">
-          <div class="adopt-detail-basicinfo">
-            <div class="adopt-detail-basicinfo-title"></div>
+      <div class="volun-detail-box2">
+        <div class="volun-detail-content">
+          <div class="volun-detail-basicinfo">
+            <div class="volun-detail-basicinfo-title"></div>
             <div>10월 18일에 카풀 멤버 구합니다.</div>
             <div>시간과 장소는 연락 후에 정하겠습니다.</div>
             <div>자차 없으신 분 연락 주세요.</div>
@@ -101,48 +101,61 @@
       <br>
 
       <!-- 버튼 -->
-      <div class="adopt-detail-box3">
+      <div class="volun-detail-box3">
         <div>
-          <button class="adopt-modify-button">수정</button>　
-          <button class="adopt-delete-button">삭제</button>
+          <button class="volun-modify-button">수정</button>　
+          <button class="volun-delete-button">삭제</button>
         </div>
-        <button class="adopt-end-button">신고</button>
+        <button class="volun-end-button">신고</button>
       </div>
       
       <br>
 
       <!-- 댓글창 -->
-      <div class="adopt-detail-box4">
-        <div class="adopt-detail-commentNum">댓글 2</div>
-        <div class="adopt-detail-commentbox">
-          <div class="adopt-detail-name">행복이</div>
-          <div class="adopt-detail-comment">저요!</div>
+      <div class="volun-detail-box4">
+        <div class="volun-detail-commentNum">댓글 2</div>
+        <div class="volun-detail-commentbox">
+          <div class="volun-detail-name">행복이</div>
+          <div class="volun-detail-comment">저요!</div>
           <div class="volun-member-rewrite-contents">
             <a href="../../html/volun/volun-post-member-comm-rewriter.html">
               <button class="volun-member-rewrite-contents-button" type="button">수정</button></a>
             <button class="volun-member-rewrite-contents-button" id="volun-myModal" type="button"
               onclick="openDeleteModal()"><span>삭제</span></button>
           </div>
-          <div class="adopt-detail-date">2024-10-10</div>
+          <div class="volun-detail-date">2024-10-10</div>
         </div>
-        <div class="adopt-detail-commentbox">
-          <div class="adopt-detail-name">아가다</div>
-          <div class="adopt-detail-comment">저요!</div>
-          <div class="adopt-detail-date">2024-10-10</div>
+        <div class="volun-detail-commentbox">
+          <div class="volun-detail-name">아가다</div>
+          <div class="volun-detail-comment">저요!</div>
+          <div class="volun-detail-date">2024-10-10</div>
         </div>
       </div>
 
       <br>
 
       <!-- 댓글입력 -->
-      <form>
-        <input class="adopt-detail-commentregi" type="text" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
-        <button class="adopt-commentregi-button">등록</button>
+      <form onsubmit="return Comment()">
+        <input class="volun-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
+        <button type="submit" class="volun-commentregi-button">등록</button>
       </form>
 
       <br>
   </main>
 </body>
+
+<script>
+  function Comment() {
+    const comment = document.getElementById('commentInput').value.trim();
+    
+    if (comment === '') {
+      alert('입력한 내용이 없습니다.');
+      return false; // 제출을 막습니다.
+    }
+    return true; // 내용이 있을 경우 제출합니다.
+  }
+</script>
+
 <footer>
   <div class="footer-links">
     <a href="../member/term.html">이용약관</a> |

@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>카풀 상세페이지(회원)</title>
+  <title>카풀 댓글 수정 후 등록(회원)</title>
   <link rel="stylesheet" href="../../css/volun/volun-post-member-comm-rewriter.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
 </head>
-<!-- 수정 , 삭제 , 신고 버튼 눌렀을 떄 로그인 안내 알터창 추가 -->
+
 
 <body>
   <header class="header">
@@ -103,10 +103,10 @@
       <!-- 버튼 -->
       <div class="volun-detail-box3">
         <div>
-          <button class="volun-modify-button">수정</button>　
-          <button class="volun-delete-button">삭제</button>
+          <button class="volun-modify-button" onclick="modifyAlert()">수정</button>　
+          <button class="volun-delete-button" onclick="deleteAlert()">삭제</button>
         </div>
-        <button class="volun-end-button">신고</button>
+        <button class="volun-end-button" onclick="endAlert()">신고</button>
       </div>
       
       <br>
@@ -131,15 +131,44 @@
 
       <br>
 
-      <!-- 댓글입력 -->
-      <form>
-        <input class="volun-detail-commentregi" type="text" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
-        <button class="volun-commentregi-button">등록</button>
-      </form>
+        <!-- 댓글입력 -->
+        <form onsubmit="return Comment()">
+          <input class="volun-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
+          <button type="submit" class="volun-commentregi-button">등록</button>
+        </form>
 
       <br>
   </main>
 </body>
+
+<script>
+  function Comment() {
+    const comment = document.getElementById('commentInput').value.trim();
+    
+    if (comment === '') {
+      alert('입력한 내용이 없습니다.');
+      return false; // 제출을 막습니다.
+    }
+    return true; // 내용이 있을 경우 제출합니다.
+  }
+</script>
+
+<!-- 수정 , 삭제 , 신고 알터창 -->
+<script>
+  function modifyAlert() {
+    alert("수정하시겠습니까?");
+  }
+</script>
+  <script>
+    function deleteAlert() {
+      alert("삭제하시겠습니까?");
+    }
+  </script>
+      <script>
+        function endAlert() {
+          alert("신고가 완료되었습니다.");
+        }
+      </script>
 <footer>
   <div class="footer-links">
     <a href="../member/term.html">이용약관</a> |
