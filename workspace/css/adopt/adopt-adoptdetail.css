@@ -217,3 +217,9 @@ main{
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
+
+/* 댓글수정 input 박스 */
+.adopt-modify-comment{
+  width: 300px;
+  height: 30px;
+}
