@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커뮤 상세페이지(비회원)</title>
-  <link rel="stylesheet" href="../../css/volun/volun-post-member.css">
+  <title>커뮤니티 글 상세(비회원)</title>
+  <link rel="stylesheet" href="../../css/commu/commu-post-member.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
 </head>
-<!-- 수정 , 삭제 , 신고 버튼 눌렀을 떄 로그인 안내 알터창 추가 -->
 
 <body>
   <header class="header">
@@ -27,7 +26,7 @@
               <a href="#">봉사 신청</a>
               <a href="#">봉사 후기</a>
               <a href="#">봉사 안내</a>
-              <a href="../../html/volun/volun-main-guest.html">카풀</a>
+              <a href="../../html/comm/comm-main-guest.html">카풀</a>
             </div>
           </li>
           <li class="nav-item">
@@ -37,11 +36,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="../adopt/adopt-main.html">입양</a>
+            <a href="../comm/comm-main.html">입양</a>
             <div class="dropdown-content">
-              <a href="../adopt/adopt-adopt.html">안심 입양</a>
-              <a href="../adopt/adopt-protection.html">임시 보호</a>
-              <a href="../adopt/adopt-review.html">후기</a>
+              <a href="../comm/comm-comm.html">안심 입양</a>
+              <a href="../comm/comm-protection.html">임시 보호</a>
+              <a href="../comm/comm-review.html">후기</a>
             </div>
           </li>
           <li class="nav-item">
@@ -69,66 +68,72 @@
     </div>
   </header>
   <main>
-    <div class="post-guest-main">
-      <!--게시판 상단 (제목, 닉네임)-->
-      <div class="post-guest">
-        <div class="topTitle">
-          <h1>애기가 밥을 너무 많이 먹어요 괜찮은가요?<span id="comment">[1]</span></h1>
-        </div>
-        <div class="topTitle-box">
-          <div class="topTitle-mainbox">
-            <div class="topTitle-name"><strong>프린세스</strong><small>등록일 2024-10-08 13:40</small></div>
+    <!-- 카풀 메인  크기 -->
+    <div class="comm-main-size">
+        <!--게시글 상단-->
+        <div class="comm-header">
+          <div class="navcontainer">
+            <ul id="navlist">
+              <li><a id="current" href="" onfocus="blur()">전체</a></li>
+              <li><a href="" onfocus="blur()">인기</a></li>
+              <li><a href="" onfocus="blur()">자유</a></li>
+              <li><a href="" onfocus="blur()">봉사 후기</a></li>
+              <li><a href="" onfocus="blur()">질문</a></li>
+              <li><a href="" onfocus="blur()">자랑</a></li>
+            </ul>
           </div>
         </div>
-        <div class="post-textarea">
-          <span>뒤돌아 서면 배고픈가봐요</span><br>
-          <span>돼지 정코코!</span>
+
+      <!-- 제목/작성자/등록일 크기 -->
+      <div class="comm-detail-box1">
+        <div class="comm-detail-title">우리집 애기 귀엽죠 [1]</div>
+        <div class="comm-detail-info"><span>작성자 : 프린세스</span>
+          <sapn>등록일 : 2024-10-08</sapn>
         </div>
       </div>
-      <div class="volun-button">
-        <div class="volun-admain-btuall">
-          <button class="volun-admain-btu" type="button" onclick="location.href='#'">
-            <span class="volun-admain-btu-sp">수정</span>
-          </button>
-        </div>
-        <div class="volun-admain-btuall-delete">
-          <button class="volun-admain-btu-delete" type="button" onclick="location.href='#'">
-            <span class="volun-admain-btu-delete-sp">삭제</span>
-          </button>
-        </div>
-        <div class="volun-admain-btuall-complaint">
-          <button class="volun-admain-btu-complaint" type="button" onclick="location.href='#'">
-            <span class="volun-admain-btu-complaint-sp">신고</span>
-          </button>
-        </div>
-      </div>
-      <div class="volun-commentInfo">
-        <div class="comment-count">댓글 <span id="count">2</span></div>
-        <div class="comment-comment-list">
-          <div>
-            <div>
-              <div><strong>민채</strong></div>
-              <div><span>귀여운데요</span></div>
 
-
-              <div><small>2024-10-08 14:50</small></div>
-
-            </div>
-            <br>
-            <div>
-              <div><strong>아가다</strong></div>
-              <div><span>돼지코코도 귀여워요</span></div>
-
-              <div><small>2024-10-08 14:51</small></div>
-            </div>
-            <br>
-
+      <!-- 글내용 크기 -->
+      <div class="comm-detail-box2">
+        <div class="comm-detail-content">
+          <div class="comm-detail-basicinfo">
+            <div class="comm-detail-basicinfo-title"></div>
+            <div>가끔보면 사람같은 우리 집 애..</div>
+            <div>개 팔자가 상팔자다</div>
+            <div>부럽다</div>
           </div>
+
         </div>
       </div>
+
+
+      <br>
+
+      <!-- 댓글창 -->
+      <div class="comm-detail-box4">
+        <div class="comm-detail-commentNum">댓글 2</div>
+        <div class="comm-detail-commentbox">
+          <div class="comm-detail-name">행복이</div>
+          <div class="comm-detail-comment">저희 집 애두요</div>
+          <div class="comm-detail-date">2024-10-08</div>
+        </div>
+        <br>
+        <div class="comm-detail-commentbox">
+          <div class="comm-detail-name">아가다</div>
+          <div class="comm-detail-comment">배고파</div>
+          <div class="comm-detail-date">2024-10-08</div>
+        </div>
+      </div>
+
+      <br>
+
+
+      <br>
     </div>
   </main>
 </body>
+
+
+
 <footer>
   <div class="footer-links">
     <a href="../member/term.html">이용약관</a> |
