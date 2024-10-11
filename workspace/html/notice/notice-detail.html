@@ -4,22 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- include libraries(jQuery, bootstrap) -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <!-- include summernote css/js -->
-  <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote.min.js"></script>
-
-  <link rel="stylesheet" href="../../css/donation/donation-write.css">
+  <title>기부 - 글 상세페이지</title>
+  <link rel="stylesheet" href="../../css/notice/notice-detail.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
+  <script defer src="../../js/main.js"></script>
 </head>
 
 <body>
+
   <header class="header">
     <div class="logo-nav">
       <div class="logo">
@@ -76,50 +69,54 @@
       </ul>
     </div>
   </header>
+  
   <main>
-    <!-- 입양 메인 크기 -->
-    <div class="adopt-main-size">
+    <div class="post-guest-main">
+      <div class="post-guest">
+        <div class="topTitle">
+          <h1>입양 공지사항<span id="comment"></span></h1>
+        </div>
+        <div id="line"></div>
 
-      <!-- 입양신청 글 등록 -->
-
-
-      <span id="donation-title"><h1>기부 글쓰기</h1></span>
-      <div id="line"></div>
-      <br>
-
-      <!-- 글작성 박스 -->
-      <div class="adopt-write-area">
-        <form action="링크" method="post">
-          <br>
-
-          <!-- 썸머노트 -->
-          <div class="content">
-            <form method="post" action="">
-              <input id="subject" name="subject" class="adoptwrite-title" placeholder="제목을 입력해주세요">
-              <textarea id="contents" name="contents"></textarea>
-            </form>
+          <!--게시판 상단 (제목, 닉네임)-->
+        <div class="notice-addetail-content">
+          <div class="notice-addetail-tcontent">작성자</div>
+          <div class="notice-addetail-ttxt">관리자</div>
+        </div>
+        <div class="notice-addetail-content">
+          <div class="notice-addetail-tcontent">작성일</div>
+          <div class="notice-addetail-ttxt">2024-08-26 13:04</div>
+        </div>
+        <div class="notice-addetail-maincont">
+          <div>
+            <pre>
+                  <p style="font-family: Noto Sans, malgun gothic, AppleGothic, dotum, sans-serif;">입양 공지사항 내용</p>
+              </pre>
           </div>
+        </div>
 
-          <!-- 등록/취소 버튼 -->
-          <div class="adopt-write-button-box">
-            <button class="adopt-cancle-button" type="button" onclick="cancleClick()">취소</button>
-            <button class="adopt-write-button" type="button">등록</button>
-          </div>
-        </form>
+      <div class="volun-button">
+
+        <div class="volun-admain-btuall-complaint">
+          <button class="volun-admain-btu-complaint" type="button">
+            <a href="../../html/notice/notice-list.html"><span class="volun-admain-btu-complaint-sp">목록</span></a>
+          </button>
+        </div>
       </div>
+
+    </div>
   </main>
 
 </body>
 
 <footer>
+  <div class="footer-links">
+    <a href="../member/term.html">이용약관</a> |
+    <a href="../member/term.html">개인정보처리방침</a>
+  </div>
   <h6>(06236)서울특별시 강남구 테헤란로 146, 신한은행 건물 (3층) | 대표이사 강수정 김규열 김민채 신승민 이기철 정시우 | 회사업자등록번호104-81-4522690 |<br>
     통신판매업신고번호 2017-서울용산-066 | 사업자정보확인호스팅사업자 NT넥스트레벨 대표이메일 nextlevel_224@next.com<br>
     © NEXT LEVEL. All Rights Reserved</h6>
 </footer>
-
-<script defer src="../../js/main/header.js"></script>
-<script defer src="../../js/donation/donation-write.js"></script>
-
-
 
 </html>
