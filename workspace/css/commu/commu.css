@@ -13,18 +13,19 @@
   margin: 0 auto;
 }
 
+/*커뮤니티 게시판 회원*/
+/*게시글 상단*/
 a {
   text-decoration: none;
   color: black;
 }
-/*커뮤니티 게시판 회원*/
-/*게시글 상단*/
 
 ul{
   display: flex; /* 가로로 나열 */
   list-style-type: none;
   margin: 0 auto; /* 중앙 정렬 */
 }
+
 
 .comm-header{
   height: 50px;
