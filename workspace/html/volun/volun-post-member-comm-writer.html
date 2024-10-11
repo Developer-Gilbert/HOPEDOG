@@ -103,10 +103,10 @@
       <!-- 버튼 -->
       <div class="volun-detail-box3">
         <div>
-          <button class="volun-modify-button">수정</button>　
-          <button class="volun-delete-button">삭제</button>
+          <button class="volun-modify-button" onclick="modifyAlert()">수정</button>　
+          <button class="volun-delete-button" onclick="deleteAlert()">삭제</button>
         </div>
-        <button class="volun-end-button">신고</button>
+        <button class="volun-end-button" onclick="endAlert()">신고</button>
       </div>
       
       <br>
@@ -143,7 +143,7 @@
       <br>
   </main>
 </body>
-
+<!-- 댓글 알터창 -->
 <script>
   function Comment() {
     const comment = document.getElementById('commentInput').value.trim();
@@ -155,6 +155,23 @@
     return true; // 내용이 있을 경우 제출합니다.
   }
 </script>
+
+<!-- 수정 , 삭제 , 신고 알터창 -->
+<script>
+  function modifyAlert() {
+    alert("수정하시겠습니까?");
+  }
+</script>
+  <script>
+    function deleteAlert() {
+      alert("삭제하시겠습니까?");
+    }
+  </script>
+      <script>
+        function endAlert() {
+          alert("신고가 완료되었습니다.");
+        }
+      </script>
 
 <footer>
   <div class="footer-links">
