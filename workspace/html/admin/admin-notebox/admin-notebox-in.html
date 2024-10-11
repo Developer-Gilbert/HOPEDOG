@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>관리자 페이지- 센터 회원가입 신청 목록</title>
+    <title>관리자 페이지- 받은 쪽지함</title>
     <link rel="stylesheet" href="../../../css/admin/admin-main/admin-common.css">
     <link rel="stylesheet" href="../../../css/admin/admin-main/admin-sidemenu.css">
-    <link rel="stylesheet" href="../../../css/admin/admin-center-apply/admin-center-apply-list.css">
+    <link rel="stylesheet" href="../../../css/admin/admin-notebox/admin-notebox.css">
     <link rel="icon" href="/im/logo/favicon.png">
 </head>
 
@@ -22,7 +22,7 @@
             </div>
             <div>
                 <div class="select-name">
-                    <span>센터 회원가입 신청 관리</span>
+                    <span>받은 쪽지함</span>
                 </div>
             </div>
         </div>
@@ -133,8 +133,7 @@
                             <button class="search-btn" type="submit">검색</button>
                          </form>
                         <div class="delete-box">
-                            <button class="deleteButton delete-button">수락</button>
-                            <button class="deleteButton delete-button">거절</button>
+                            <button class="deleteButton delete-button">선택 항목 삭제</button>
                         </div>
                     </div>
 
@@ -142,19 +141,21 @@
                     <section class="board-info-box-layout">
                         <div class="board-info-box">
                             <div class="board-info-title-box">
-                                <span>센터 회원가입 신청 목록</span>
+                                <span><a class="notebox-btn" href="admin-notebox-in.html">받은 쪽지함</a>&emsp;&emsp;&emsp;<a class="notebox-btn" href="admin-notebox-out.html">보낸 쪽지함</a></span>
+                                <span class="write-btn"><a href="./admin-notebox-write.html" >쪽지 쓰기</a></span>
                             </div>
                     
                             <div class="info-table">
                                 <!-- Header -->
                                 <div class="info-row header-row">
-                                    <div class="info-cell checkbox-line">
+                                    <div class="info-cell checkbox-line"> 
                                         <input type="checkbox" id="allSelect">
                                     </div>
                                     <div class="info-cell-no info-cell">No</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">신청일</div>
-                                    <div class="info-cell-content info-cell">신청서</div>
+                                    <div class="info-cell-cate info-cell">송신자</div>
+                                    <div class="info-cell-cate info-cell">수신자</div>
+                                    <div class="info-cell-title info-cell">제목</div>
+                                    <div class="info-cell-content info-cell">내용</div>
                                 </div>
                     
                                 <!-- Data rows -->
@@ -162,139 +163,11 @@
                                     <div class="info-cell checkbox-line">
                                         <input type="checkbox" class="checkbox" name="check">
                                     </div>
-                                    <div class="info-cell-no info-cell"><a href="./admin-center-application.html">1</a></div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
+                                    <div class="info-cell-no info-cell">1</div>
+                                    <div class="info-cell-cate info-cell">송신자 이름</div>
+                                    <div class="info-cell-cate info-cell">수신자 이름</div>
+                                    <div class="info-cell-title info-cell"><a href="./admin-notebox-in-detail.html">Lorem ipsum dolor sit amet</a></div>
                                     <div class="info-cell-content info-cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit lectus in consectetur lobortis. Integer justo orci, fringilla vel congue non, tincidunt luctus ante. Proin ut porttitor diam. Cras arcu magna, varius et metus et, viverra ornare felis. Suspendisse faucibus ut nibh ac malesuada. Mauris eget pulvinar urna, fringilla cursus lorem. Aenean hendrerit est quis accumsan facilisis.</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">2</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-                                
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">3</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">4</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">5</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">6</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">7</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-                                
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">8</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">9</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
-
-                                </div>
-
-                                <div class="info-row">
-                                    <div class="info-cell checkbox-line">
-                                        <input type="checkbox" class="checkbox" name="check">
-                                    </div>
-                                    <div class="info-cell-no info-cell">10</div>
-                                    <div class="info-cell-stat info-cell">센터명</div>
-                                    <div class="info-cell-cate info-cell">
-                                        <a>2024-10-09</a>
-                                    </div>
-
-                                    <div class="info-cell-content info-cell">01012345678</div>
 
                                 </div>
                             </div>
