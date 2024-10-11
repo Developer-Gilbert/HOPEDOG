@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>관리자 페이지- 센터 회원가입 신청서</title>
+  <title>관리자 페이지- 회원 정보</title>
   <link rel="stylesheet" href="../../../css/admin/admin-main/admin-common.css">
   <link rel="stylesheet" href="../../../css/admin/admin-main/admin-sidemenu.css">
-  <link rel="stylesheet" href="../../../css/admin/admin-center-apply/admin-center-application.css">
+  <link rel="stylesheet" href="../../../css/admin/admin-member/admin-member-detail.css">
   <link rel="icon" href="/im/logo/favicon.png">
 </head>
 
@@ -22,7 +22,7 @@
       </div>
       <div>
         <div class="select-name">
-          <span>센터 회원가입 신청서 관리</span>
+          <span>회원 정보 관리</span>
         </div>
       </div>
     </div>
@@ -131,22 +131,31 @@
           <section class="board-info-box-layout">
             <div class="board-info-box">
               <div class="board-info-title-box">
-                <span>센터 회원가입 신청서</span>
+                <span>회원 정보</span>
               </div>
               <div class="center-container">
-                <h1>센터 회원가입 신청서</h1>
+                <h1>회원 정보</h1>
                 <form id="center-signupForm">
                   <div class="center-form-group">
-                    <label for="center-name">센터 이름 <span class="center-required">*</span></label>
+                    <label for="center-name">이름 <span class="center-required">*</span></label>
                     <input type="text" id="center-name" name="center-name" readonly value="Lorem Ipsum" required>
                     <span class="center-error-message" id="center-name-error"></span>
                   </div>
                   <div class="center-form-group">
-                    <label for="center-businessNumber">사업자 등록번호 <span class="center-required">*</span></label>
+                    <label for="center-businessNumber">닉네임 <span class="center-required">*</span></label>
                     <div class="center-input-button-group">
                       <input type="text" id="center-businessNumber" name="center-businessNumber" readonly value="Lorem Ipsum" required>
                     </div>
                     <span class="center-error-message" id="center-businessNumber-error"></span>
+                  </div>
+                  <div class="form-group">
+                    <label>성별 <span class="required">*</span></label>
+                    <div class="gender-buttons">
+                      <button type="button" class="gender-btn" data-gender="남">남</button>
+                      <button type="button" class="gender-btn" data-gender="여">여</button>
+                    </div>
+                    <input type="hidden" id="gender" name="gender" required="">
+                    <span class="error-message" id="gender-error"></span>
                   </div>
                   <div class="center-form-group">
                     <label for="center-userid">아이디 <span class="center-required">*</span></label>
@@ -159,11 +168,6 @@
                     <span class="center-error-message" id="center-password-error"></span>
                   </div>
                   <div class="center-form-group">
-                    <label for="center-passwordConfirm">비밀번호 확인 <span class="center-required">*</span></label>
-                    <input type="password" id="center-passwordConfirm" name="center-passwordConfirm" readonly value="Lorem Ipsum" required>
-                    <span class="center-error-message" id="center-passwordConfirm-error"></span>
-                  </div>
-                  <div class="center-form-group">
                     <label for="center-phone">연락처 <span class="center-required">*</span></label>
                     <div class="center-input-button-group">
                       <input type="tel" id="center-phone" name="center-phone" readonly value="Lorem Ipsum" required>
@@ -171,25 +175,11 @@
                     <span class="center-error-message" id="center-phone-error"></span>
                   </div>
                   <div class="center-form-group">
-                    <label for="center-phoneVerifyCode">연락처 인증번호 <span class="center-required">*</span></label>
-                    <div class="center-input-button-group">
-                      <input type="text" id="center-phoneVerifyCode" name="center-phoneVerifyCode" readonly value="Lorem Ipsum" required>
-                    </div>
-                    <span class="center-error-message" id="center-phoneVerifyCode-error"></span>
-                  </div>
-                  <div class="center-form-group">
-                    <label for="center-email">대표 이메일 <span class="center-required">*</span></label>
+                    <label for="center-email">이메일 <span class="center-required">*</span></label>
                     <div class="center-input-button-group">
                       <input type="email" id="center-email" name="center-email" readonly value="Lorem Ipsum" required>
                     </div>
                     <span class="center-error-message" id="center-email-error"></span>
-                  </div>
-                  <div class="center-form-group">
-                    <label for="center-emailVerifyCode">이메일 인증번호 <span class="center-required">*</span></label>
-                    <div class="center-input-button-group">
-                      <input type="text" id="center-emailVerifyCode" name="center-emailVerifyCode" readonly value="Lorem Ipsum" required>
-                    </div>
-                    <span class="center-error-message" id="center-emailVerifyCode-error"></span>
                   </div>
                   <div class="center-form-group">
                     <label for="center-zipcode">우편번호 <span class="center-required">*</span></label>
@@ -210,8 +200,7 @@
                   </div>
                   <div class="delete-box-layout">
                     <div class="delete-box">
-                      <button class="deleteButton delete-button">수락</button>
-                      <button class="deleteButton delete-button">거절</button>
+                      <button class="deleteButton delete-button">강제 탈퇴</button>
                     </div>
                   </div>
                 </form>
