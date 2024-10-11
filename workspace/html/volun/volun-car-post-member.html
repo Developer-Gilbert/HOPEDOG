@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>카풀 상세페이지(비회원)</title>
-  <link rel="stylesheet" href="../../css/volun/volun-post-guest.css">
+  <title>카풀 게시글(회원)</title>
+  <link rel="stylesheet" href="../../css/volun/volun-car-post-member.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
 </head>
@@ -68,9 +68,9 @@
     </div>
   </header>
   <main>
-    <!-- 입양 메인 크기 -->
+    <!-- 카풀 메인  크기 -->
     <div class="volun-main-size">
-      <!-- 입양/임보/후기 게시판 바 -->
+      <!-- 봉사, 카풀 게시판 바 -->
       <div class="volun-nav">
         <div class="volun-navList">봉사</div>
         <div class="volun-navList1">카풀</div>
@@ -100,13 +100,13 @@
       <br>
 
       <!-- 버튼 -->
-      <!-- <div class="volun-detail-box3">
+      <div class="volun-detail-box3">
         <div>
           <button class="volun-modify-button" onclick="modifyAlert()">수정</button>　
           <button class="volun-delete-button" onclick="deleteAlert()">삭제</button>
         </div>
         <button class="volun-end-button" onclick="endAlert()">신고</button>
-      </div> -->
+      </div>
       
       <br>
 
@@ -128,25 +128,16 @@
 
       <br>
 
+      <!-- 댓글입력 -->
+      <form onsubmit="return Comment()">
+        <input class="volun-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
+        <button type="submit" class="volun-commentregi-button">등록</button>
+      </form>
+
       <br>
   </main>
-<!-- 수정 , 삭제 , 신고 알터창 -->
-  <script>
-    function modifyAlert() {
-      alert("로그인 후 수정 가능합니다.");
-    }
-  </script>
-    <script>
-      function deleteAlert() {
-        alert("로그인 후 삭제 가능합니다.");
-      }
-    </script>
-        <script>
-          function endAlert() {
-            alert("로그인 후 신고 가능합니다.");
-          }
-        </script>
 </body>
+      
 <footer>
   <div class="footer-links">
     <a href="../member/term.html">이용약관</a> |
@@ -157,6 +148,6 @@
     © NEXT LEVEL. All Rights Reserved</h6>
 </footer>
 
-<script defer src="../js/header.js"></script>
-
+<script defer src="../../js/main/header.js"></script>
+<script defer src="../../js/volun/volun-car-post-member.js"></script>
 </html>

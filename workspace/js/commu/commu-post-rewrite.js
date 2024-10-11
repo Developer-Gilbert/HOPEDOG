@@ -1,4 +1,4 @@
-// 썸머노트 크기 및 튜닝
+ // 썸머노트 크기 및 튜닝
 $(function () {
   $("#contents").summernote({
       width: 780,                   // 가로값 설정
@@ -23,7 +23,7 @@ $(function () {
       ]
   });
 });
-
+ 
  //등록
  function registration() {
   const subject = document.getElementById('subject').value.trim();

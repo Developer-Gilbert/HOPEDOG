@@ -5,18 +5,8 @@
   margin: 0 auto;
 }
 
-.commu-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1080px;
-  height: 60px;
-  background-color: white;
-  border-top: solid 2px #9B805D;
-  border-bottom: solid 2px #9B805D;
-}
-
 /*게시글 상단*/
+
 a {
   text-decoration: none;
   color: black;
@@ -31,7 +21,7 @@ ul{
 
 .comm-header{
   height: 50px;
-  margin: 0 auto;
+  width: 1080px;
   border-bottom: 2px solid #9B805D; /* 아래쪽 경계선 추가 */
 }
 
@@ -51,7 +41,7 @@ ul{
   margin: 0 10px;
 }
 
-/* 게시글 글 작성 */
+/* 커뮤니티 글 작성 */
 .protect-wirtebanner{
   background-color: #F5EAD9;
   width: 1080px;
@@ -76,7 +66,6 @@ ul{
   margin: 0 auto;
 }
 
-/* 등록/취소버튼 */
 .protect-write-button-box{
   width: 780px;
   height: 70px;
@@ -118,6 +107,18 @@ ul{
   color: white;
 }
 
+/* 지울꺼임 제목/본문 api사용예정 */
+.title{
+  background-color: white;
+  width: 780px;
+  height: 50px;
+}
+
+.content{
+  background-color: white;
+  width: 780px;
+  height: 400px;
+}
 
 /* 썸머노트 크기 js에서도 설정해야함 */
 .content{
@@ -128,4 +129,10 @@ ul{
 .adoptwrite-title{
   width: 780px;
   height: 50px;
+}
+
+.adoptwrite-title::placeholder,
+textarea::placeholder {
+  color: black; /* 원하는 색상으로 변경 */
+  font-weight: bold;
 }

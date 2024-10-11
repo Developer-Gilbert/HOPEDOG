@@ -154,73 +154,72 @@ main{
   color: white;
 }
 
-.volun-detail-box4{
+.review-detail-commentbox{
   width: 745px;
   height: auto;
 }
 
-.volun-detail-commentNum{
-  width: 745px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.volun-detail-commentbox{
-  width: 745px;
-  height: auto;
-}
-
-.volun-detail-name{
+.review-detail-name{
   font-size: 14px;
   font-weight: bold;
 }
 
-.volun-detail-comment{
+.review-detail-comment{
   font-size: 14px;
 }
 
-.volun-detail-date{
+.review-detail-date{
   font-size: 12px;
 }
 
-.volun-detail-commentregi{
+.review-detail-commentregi{
   width: 620px;
   height: 50px;
-  border: 2px solid #9B805D; /* 원하는 border 색상 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  padding: 5px; /* 내부 여백 */
 }
 
-/*댓글 수정*/
-.volun-comment-inputbox-but {
-  display: flex;
-}
-
-.volun-comment-rewrite-input {
-  width: 300px;
-  height: 30px;
-  border: 2px solid #9B805D; /* 원하는 border 색상 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  padding: 5px; /* 내부 여백 */
-}
-
-.volun-comment-rewrite-submit {
+.review-commentregi-button{
   width: 100px;
-  height: 44px;
+  height: 50px;
   background-color: #F5EAD9;
   border: none;
   border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 10px;
-  border-style: none;
-  color: black;
 }
 
+.review-commentregi-button:hover {
+  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
+  color: white;
+}
+
+/* 댓글버튼 */
+.review-comment-button{
+  width: 50px;
+  height: 25px;
+  background-color: #F5EAD9;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.review-comment-button:hover {
+  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
+  color: white;
+}
+
+/* 댓글수정 input 박스 */
+.review-modify-comment{
+  width: 300px;
+  height: 30px;
+}
+
+.volun-detail-commentregi{
+  width: 620px;
+  height: 50px;
+}
 
 .volun-commentregi-button{
   width: 100px;
@@ -236,10 +235,4 @@ main{
 .volun-commentregi-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
-}
-
-/*댓글 수정 호버*/
-.volun-comment-rewrite-submit:hover {
-  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
-  color: white; /* 마우스를 올렸을 때 텍스트 색상 */
 }

@@ -226,7 +226,6 @@ li::marker {
 /* 검색창 */
 .bottom-search{
   display: flex;
-  justify-content: left;
   width: 400px;
   margin-top: 15px;
 }
@@ -237,6 +236,7 @@ input[type="submit"] {
   border-radius: 5px; /* 모서리 둥글게 */
   box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 설정 */
   height: 26px;
+  width: 35px;
 }
 
 input[type="submit"]:hover{

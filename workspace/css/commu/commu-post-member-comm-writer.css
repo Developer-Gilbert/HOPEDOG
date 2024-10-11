@@ -5,7 +5,7 @@ main{
   align-items: center;
 }
 
-.volun-main-size{
+.commu-main-size{
   width: 1080px;
   min-height: 500px;
   display: flex;
@@ -14,7 +14,7 @@ main{
 }
 
 
-.volun-nav{
+.commu-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,21 +25,21 @@ main{
   border-bottom: solid 2px #9B805D;
 }
 
-.volun-navList{
+.commu-navList{
   font-size: 18px;
   font-weight: bold;
   width: 300px;
   text-align: center;
 }
 
-.volun-navList1{
+.commu-navList1{
   font-size: 18px;
   font-weight: bold;
   width: 300px;
   text-align: center;
 }
 
-.volun-detail-box1{
+.commu-detail-box1{
   width: 1080px;
   height: 100px;
   display: flex;
@@ -49,7 +49,7 @@ main{
   border-bottom: 2px solid #9B805D;
 }
 
-.volun-detail-title{
+.commu-detail-title{
   width: 745px;
   height: 60px;
   font-size: 24px;
@@ -58,7 +58,7 @@ main{
   align-items: center;
 }
 
-.volun-detail-info{
+.commu-detail-info{
   width: 745px;
   height: 15px;
   font-size: 14px;
@@ -68,7 +68,7 @@ main{
   align-items: center;
 }
 
-.volun-detail-box2{
+.commu-detail-box2{
   width: 1080px;
   min-height: 500px;
   border-bottom: 2px solid #9B805D;
@@ -77,7 +77,7 @@ main{
   align-items: center;
 }
 
-.volun-detail-content{
+.commu-detail-content{
   background-color: white;
   width: 745px;
   min-height: 450px;
@@ -86,19 +86,19 @@ main{
   flex-direction: column;
 }
 
-.volun-detail-basicinfo{
+.commu-detail-basicinfo{
   font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.volun-detail-basicinfo-title{
+.commu-detail-basicinfo-title{
   font-size: 18px;
   font-weight: bold;
 }
 
-.volun-detail-box3{
+.commu-detail-box3{
   width: 745px;
   height: auto;
   display: flex;
@@ -106,7 +106,7 @@ main{
   align-items: center;
 }
 
-.volun-modify-button{
+.commu-modify-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -117,12 +117,12 @@ main{
   cursor: pointer;
 }
 
-.volun-modify-button:hover {
+.commu-modify-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.volun-delete-button{
+.commu-delete-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -133,12 +133,12 @@ main{
   cursor: pointer;
 }
 
-.volun-delete-button:hover {
+.commu-delete-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.volun-end-button{
+.commu-end-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -149,49 +149,35 @@ main{
   cursor: pointer;
 }
 
-.volun-end-button:hover {
+.commu-end-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.volun-detail-box4{
+.review-detail-commentbox{
   width: 745px;
   height: auto;
 }
 
-.volun-detail-commentNum{
-  width: 745px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.volun-detail-commentbox{
-  width: 745px;
-  height: auto;
-}
-
-.volun-detail-name{
+.review-detail-name{
   font-size: 14px;
   font-weight: bold;
 }
 
-.volun-detail-comment{
+.review-detail-comment{
   font-size: 14px;
 }
 
-.volun-detail-date{
+.review-detail-date{
   font-size: 12px;
 }
 
-.volun-detail-commentregi{
+.review-detail-commentregi{
   width: 620px;
   height: 50px;
 }
 
-.volun-commentregi-button{
+.review-commentregi-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -202,33 +188,51 @@ main{
   cursor: pointer;
 }
 
-.volun-commentregi-button:hover {
+.review-commentregi-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-/*수정삭제 버튼*/
-.volun-member-rewrite-contents {
-  /* border: 1px solid black; */
-  display: flex;
-  width: 100%;
+/* 댓글버튼 */
+.review-comment-button{
+  width: 50px;
+  height: 25px;
+  background-color: #F5EAD9;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.volun-member-rewrite-contents-button {
-  background-color: #F5EAD9;
-  width: 60px;
+.review-comment-button:hover {
+  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
+  color: white;
+}
+
+/* 댓글수정 input 박스 */
+.review-modify-comment{
+  width: 300px;
   height: 30px;
+}
+
+.commu-detail-commentregi{
+  width: 620px;
+  height: 50px;
+}
+
+.commu-commentregi-button{
+  width: 100px;
+  height: 50px;
+  background-color: #F5EAD9;
+  border: none;
+  border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
-  color: aliceblue;
-  margin-right: 10px;
-  border: 2px solid #F5EAD9; /* 원하는 border 색상 설정 */
-  border-radius: 8px; /* 모서리 둥글게 */
-  padding: 5px; /* 내부 여백 */
-  color: black;
+  cursor: pointer;
 }
 
-.volun-member-rewrite-contents-button:hover {
+.commu-commentregi-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
-  color: white; /* 마우스를 올렸을 때 글자색 변경 */
+  color: white;
 }

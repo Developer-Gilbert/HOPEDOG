@@ -24,8 +24,8 @@ $(function () {
   });
 });
 
- //등록
- function registration() {
+//게시글 등록
+function registration() {
   const subject = document.getElementById('subject').value.trim();
   const contents = document.getElementById('contents').value.trim();
 
@@ -43,12 +43,12 @@ function Cancel() {
 
   if (subject === '' && contents === '') {
     // 아무 내용도 입력되지 않은 경우
-    location.href = '../../html/commu/commu-main-member.html'; // 바로 이동
+    location.href = '../../html/volun/volun-car-main-member.html'; // 바로 이동
   } else {
     // 내용이 입력된 경우 알림창
     const confirmResult = confirm('작성된 내용이 저장되지 않습니다. 취소하시겠습니까?');
     if (confirmResult) {
-      location.href = '../../html/commu/commu-main-member.html'; // 확인 시 이동
+      location.href = '../../html/volun/volun-car-main-member.html'; // 확인 시 이동
     }
     // 아니요 버튼을 누르면 페이지 그대로 유지
   }
