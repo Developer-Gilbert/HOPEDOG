@@ -1,11 +1,12 @@
-.commu-main{
+.volun-main{
   width: 1080px;
   height: 1000px;
   background-color: white;
   margin: 0 auto;
 }
 
-.commu-nav{
+/* 봉사,카풀 게시판 바 */
+.volun-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,43 +17,22 @@
   border-bottom: solid 2px #9B805D;
 }
 
-/*게시글 상단*/
-a {
-  text-decoration: none;
-  color: black;
+.volun-navList{
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
 }
 
-ul{
-  display: flex; /* 가로로 나열 */
-  list-style-type: none;
-  margin: 0 auto; /* 중앙 정렬 */
+.volun-navList1{
+  font-size: 18px;
+  font-weight: bold;
+  width: 300px;
+  text-align: center;
 }
 
-
-.comm-header{
-  height: 50px;
-  margin: 0 auto;
-  border-bottom: 2px solid #9B805D; /* 아래쪽 경계선 추가 */
-}
-
-.navcontainer {
-  height: 30px;
-  display: flex;
-  margin: 10px 0 1px 0;
-  align-items: center;
-}
-
-#navlist {
-  display: flex;
-  gap: 78px;
-}
-
-#navlist li{
-  margin: 0 10px;
-}
-
-/* 게시글 글 작성 */
-.protect-wirtebanner{
+/* 카풀 글 작성 */
+.car-wirtebanner{
   background-color: #F5EAD9;
   width: 1080px;
   height: 70px;
@@ -65,7 +45,7 @@ ul{
 }
 
 /* 글작성 박스 */
-.protect-write-area{
+.car-write-area{
   width: 800px;
   height: auto;
   border: solid 1px #9B805D;
@@ -76,8 +56,8 @@ ul{
   margin: 0 auto;
 }
 
-/* 등록/취소버튼 */
-.protect-write-button-box{
+/* 등록 버튼 */
+.car-write-button-box{
   width: 780px;
   height: 70px;
   display: flex;
@@ -102,6 +82,7 @@ ul{
   color: white;
 }
 
+/* 취소 버튼 */
 .review-cancle-button{
   width: 100px;
   height: 50px;
@@ -119,7 +100,7 @@ ul{
 }
 
 
-/* 썸머노트 크기 js에서도 설정해야함 */
+/* 썸머노트  */
 .content{
   width: 780px;
   height: 670px;
@@ -128,4 +109,10 @@ ul{
 .adoptwrite-title{
   width: 780px;
   height: 50px;
+}
+
+.adoptwrite-title::placeholder,
+textarea::placeholder {
+  color: black; /* 원하는 색상으로 변경 */
+  font-weight: bold;
 }

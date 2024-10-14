@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>카풀 댓글 수정 후 등록(회원)</title>
-  <link rel="stylesheet" href="../../css/volun/volun-post-member-comm-rewriter.css">
+  <title>카풀 댓글 수정,삭제(작성자)</title>
+  <link rel="stylesheet" href="../../css/volun/volun-car-post-member-comm-writer.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
 </head>
-
 
 <body>
   <header class="header">
@@ -113,14 +112,18 @@
 
       <!-- 댓글창 -->
       <div class="volun-detail-box4">
-        <div class="volun-detail-commentNum">댓글 2</div>
-        <div class="volun-detail-commentbox">
-          <div class="volun-detail-name">행복이</div>
-          <div class="volun-comment-inputbox-but">
-            <input class="volun-comment-rewrite-input" value="저요">
-            <a href="../../html/volun/volun-post-member.html"><button class="volun-comment-rewrite-submit"
-                type="button">등록</button></a>
+        <div class="review-detail-commentbox">
+          <div class="review-detail-name">행복이</div>
+          <div class="review-detail-comment" id="review-comment">저요</div>
+          <div class="review-detail-comment" id="review-modifyInput" style="display:none;">
+            <input class="review-modify-comment">  
+            <button class="review-comment-button" onclick="editCommentBtnClcik()">등록</button>
           </div>
+          <div id="review-comment-buttonBox">
+            <button class="review-comment-button" type="button" onclick="modifyCommentBtnClcik()">수정</button>
+            <button class="review-comment-button" type="button" onclick="CommentDeleteClick()">삭제</button>
+          </div>
+          <div class="review-detail-date">2024-10-14</div>
         </div>
         <div class="volun-detail-commentbox">
           <div class="volun-detail-name">아가다</div>
@@ -131,44 +134,16 @@
 
       <br>
 
-        <!-- 댓글입력 -->
-        <form onsubmit="return Comment()">
-          <input class="volun-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
-          <button type="submit" class="volun-commentregi-button">등록</button>
-        </form>
+      <!-- 댓글입력 -->
+      <form onsubmit="return Comment()">
+        <input class="volun-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
+        <button type="submit" class="volun-commentregi-button">등록</button>
+      </form>
 
       <br>
   </main>
 </body>
 
-<script>
-  function Comment() {
-    const comment = document.getElementById('commentInput').value.trim();
-    
-    if (comment === '') {
-      alert('입력한 내용이 없습니다.');
-      return false; // 제출을 막습니다.
-    }
-    return true; // 내용이 있을 경우 제출합니다.
-  }
-</script>
-
-<!-- 수정 , 삭제 , 신고 알터창 -->
-<script>
-  function modifyAlert() {
-    alert("수정하시겠습니까?");
-  }
-</script>
-  <script>
-    function deleteAlert() {
-      alert("삭제하시겠습니까?");
-    }
-  </script>
-      <script>
-        function endAlert() {
-          alert("신고가 완료되었습니다.");
-        }
-      </script>
 <footer>
   <div class="footer-links">
     <a href="../member/term.html">이용약관</a> |
@@ -179,6 +154,6 @@
     © NEXT LEVEL. All Rights Reserved</h6>
 </footer>
 
-<script defer src="../js/header.js"></script>
-
+<script defer src="../../js/main/header.js"></script>
+<script defer src="../../js/volun/volun-car-post-member-comm-writer.js"></script>
 </html>

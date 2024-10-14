@@ -26,11 +26,11 @@ $(function () {
 
 // 게시글등록 confirm창
 function registration() {
-  const subject = document.getElementById('subject').value.trim();
-  const contents = document.getElementById('contents').value.trim();
+  const subject = document.getElementById('subject').value.trim(); //제목
+  const contents = document.getElementById('contents').value.trim(); //글
 
-  if (subject === '' || contents === '') {
-    alert('작성된 글이 없습니다.');
+  if (subject === '' || contents === '') { //제목이나 글 내용 없는지 확인
+    alert('작성된 글이 없습니다.'); 
     return false; // 입력 내용이 없을 경우
   }
 
@@ -60,7 +60,7 @@ function Cancel() {
     // 내용이 입력된 경우 알림창
     const confirmResult = confirm('작성된 내용이 저장되지 않습니다. 취소하시겠습니까?');
     if (confirmResult) {
-      location.href = '../../html/commu/commu-main-member.html'; // 확인 시 이동
+      location.href = '../../html/commu/commu-main-member.html'; // 확인 시 커뮤 메인으로 이동
     }
     // 아니요 버튼을 누르면 페이지 그대로 유지
   }

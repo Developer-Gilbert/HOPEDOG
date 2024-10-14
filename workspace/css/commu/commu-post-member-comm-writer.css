@@ -5,7 +5,7 @@ main{
   align-items: center;
 }
 
-.volun-main-size{
+.commu-main-size{
   width: 1080px;
   min-height: 500px;
   display: flex;
@@ -14,32 +14,42 @@ main{
 }
 
 
-.volun-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*게시글 상단*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  display: flex; /* 가로로 나열 */
+  list-style-type: none;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+
+.comm-header{
+  height: 50px;
   width: 1080px;
-  height: 60px;
-  background-color: white;
-  border-top: solid 2px #9B805D;
-  border-bottom: solid 2px #9B805D;
+  border-bottom: 2px solid #9B805D; /* 아래쪽 경계선 추가 */
 }
 
-.volun-navList{
-  font-size: 18px;
-  font-weight: bold;
-  width: 300px;
-  text-align: center;
+.navcontainer {
+  height: 30px;
+  display: flex;
+  margin: 10px 0 1px 0;
+  align-items: center;
 }
 
-.volun-navList1{
-  font-size: 18px;
-  font-weight: bold;
-  width: 300px;
-  text-align: center;
+#navlist {
+  display: flex;
+  gap: 78px;
 }
 
-.volun-detail-box1{
+#navlist li{
+  margin: 0 10px;
+}
+
+.commu-detail-box1{
   width: 1080px;
   height: 100px;
   display: flex;
@@ -49,7 +59,7 @@ main{
   border-bottom: 2px solid #9B805D;
 }
 
-.volun-detail-title{
+.commu-detail-title{
   width: 745px;
   height: 60px;
   font-size: 24px;
@@ -58,7 +68,7 @@ main{
   align-items: center;
 }
 
-.volun-detail-info{
+.commu-detail-info{
   width: 745px;
   height: 15px;
   font-size: 14px;
@@ -68,7 +78,7 @@ main{
   align-items: center;
 }
 
-.volun-detail-box2{
+.commu-detail-box2{
   width: 1080px;
   min-height: 500px;
   border-bottom: 2px solid #9B805D;
@@ -77,7 +87,7 @@ main{
   align-items: center;
 }
 
-.volun-detail-content{
+.commu-detail-content{
   background-color: white;
   width: 745px;
   min-height: 450px;
@@ -86,19 +96,19 @@ main{
   flex-direction: column;
 }
 
-.volun-detail-basicinfo{
+.commu-detail-basicinfo{
   font-size: 16px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.volun-detail-basicinfo-title{
+.commu-detail-basicinfo-title{
   font-size: 18px;
   font-weight: bold;
 }
 
-.volun-detail-box3{
+.commu-detail-box3{
   width: 745px;
   height: auto;
   display: flex;
@@ -106,7 +116,7 @@ main{
   align-items: center;
 }
 
-.volun-modify-button{
+.commu-modify-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -117,12 +127,12 @@ main{
   cursor: pointer;
 }
 
-.volun-modify-button:hover {
+.commu-modify-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.volun-delete-button{
+.commu-delete-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -133,12 +143,12 @@ main{
   cursor: pointer;
 }
 
-.volun-delete-button:hover {
+.commu-delete-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.volun-end-button{
+.commu-end-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -149,80 +159,35 @@ main{
   cursor: pointer;
 }
 
-.volun-end-button:hover {
+.commu-end-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-.volun-detail-box4{
+.review-detail-commentbox{
   width: 745px;
   height: auto;
 }
 
-.volun-detail-commentNum{
-  width: 745px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.volun-detail-commentbox{
-  width: 745px;
-  height: auto;
-}
-
-.volun-detail-name{
+.review-detail-name{
   font-size: 14px;
   font-weight: bold;
 }
 
-.volun-detail-comment{
+.review-detail-comment{
   font-size: 14px;
 }
 
-.volun-detail-date{
+.review-detail-date{
   font-size: 12px;
 }
 
-.volun-detail-commentregi{
+.review-detail-commentregi{
   width: 620px;
   height: 50px;
-  border: 2px solid #9B805D; /* 원하는 border 색상 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  padding: 5px; /* 내부 여백 */
 }
 
-/*댓글 수정*/
-.volun-comment-inputbox-but {
-  display: flex;
-}
-
-.volun-comment-rewrite-input {
-  width: 300px;
-  height: 30px;
-  border: 2px solid #9B805D; /* 원하는 border 색상 설정 */
-  border-radius: 5px; /* 모서리 둥글게 */
-  padding: 5px; /* 내부 여백 */
-}
-
-.volun-comment-rewrite-submit {
-  width: 100px;
-  height: 44px;
-  background-color: #F5EAD9;
-  border: none;
-  border-radius: 15px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: 10px;
-  border-style: none;
-  color: black;
-}
-
-
-.volun-commentregi-button{
+.review-commentregi-button{
   width: 100px;
   height: 50px;
   background-color: #F5EAD9;
@@ -233,13 +198,51 @@ main{
   cursor: pointer;
 }
 
-.volun-commentregi-button:hover {
+.review-commentregi-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
   color: white;
 }
 
-/*댓글 수정 호버*/
-.volun-comment-rewrite-submit:hover {
+/* 댓글버튼 */
+.review-comment-button{
+  width: 50px;
+  height: 25px;
+  background-color: #F5EAD9;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.review-comment-button:hover {
   background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
-  color: white; /* 마우스를 올렸을 때 텍스트 색상 */
+  color: white;
+}
+
+/* 댓글수정 input 박스 */
+.review-modify-comment{
+  width: 300px;
+  height: 30px;
+}
+
+.commu-detail-commentregi{
+  width: 620px;
+  height: 50px;
+}
+
+.commu-commentregi-button{
+  width: 100px;
+  height: 50px;
+  background-color: #F5EAD9;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.commu-commentregi-button:hover {
+  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
+  color: white;
 }

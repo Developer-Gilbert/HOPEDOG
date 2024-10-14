@@ -13,7 +13,7 @@ main{
   align-items: center;
 }
 
-
+/* 봉사/카풀 게시판 바 */
 .volun-nav{
   display: flex;
   justify-content: center;
@@ -39,6 +39,7 @@ main{
   text-align: center;
 }
 
+/* 제목/작성자/등록일 크기  */
 .volun-detail-box1{
   width: 1080px;
   height: 100px;
@@ -68,6 +69,7 @@ main{
   align-items: center;
 }
 
+/* 글내용 크기 */
 .volun-detail-box2{
   width: 1080px;
   min-height: 500px;
@@ -98,62 +100,7 @@ main{
   font-weight: bold;
 }
 
-.volun-detail-box3{
-  width: 745px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.volun-modify-button{
-  width: 100px;
-  height: 50px;
-  background-color: #F5EAD9;
-  border: none;
-  border-radius: 15px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.volun-modify-button:hover {
-  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
-  color: white;
-}
-
-.volun-delete-button{
-  width: 100px;
-  height: 50px;
-  background-color: #F5EAD9;
-  border: none;
-  border-radius: 15px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.volun-delete-button:hover {
-  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
-  color: white;
-}
-
-.volun-end-button{
-  width: 100px;
-  height: 50px;
-  background-color: #F5EAD9;
-  border: none;
-  border-radius: 15px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.volun-end-button:hover {
-  background-color: #9B805D; /* 마우스를 올렸을 때 변경될 색상 */
-  color: white;
-}
-
+/* 댓글창 */
 .volun-detail-box4{
   width: 745px;
   height: auto;

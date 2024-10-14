@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커뮤니티 글 상세(회원)</title>
-  <link rel="stylesheet" href="../../css/commu/commu-post-member.css">
+  <title>커뮤니티 댓글 수정,삭제(작성자)</title>
+  <link rel="stylesheet" href="../../css/commu/commu-post-member-comm-writer.css">
   <link rel="stylesheet" href="../../css/main/header.css">
   <link rel="stylesheet" href="../../css/main/footer.css">
 </head>
+<!-- 수정 , 삭제 , 신고 버튼 눌렀을 떄 로그인 안내 알터창 추가 -->
 
 <body>
   <header class="header">
@@ -26,7 +27,7 @@
               <a href="#">봉사 신청</a>
               <a href="#">봉사 후기</a>
               <a href="#">봉사 안내</a>
-              <a href="../../html/comm/comm-main-guest.html">카풀</a>
+              <a href="../../html/commu/commu-main-guest.html">카풀</a>
             </div>
           </li>
           <li class="nav-item">
@@ -36,11 +37,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a href="../comm/comm-main.html">입양</a>
+            <a href="../commu/commu-main.html">입양</a>
             <div class="dropdown-content">
-              <a href="../comm/comm-comm.html">안심 입양</a>
-              <a href="../comm/comm-protection.html">임시 보호</a>
-              <a href="../comm/comm-review.html">후기</a>
+              <a href="../commu/commu-commu.html">안심 입양</a>
+              <a href="../commu/commu-protection.html">임시 보호</a>
+              <a href="../commu/commu-review.html">후기</a>
             </div>
           </li>
           <li class="nav-item">
@@ -68,8 +69,8 @@
     </div>
   </header>
   <main>
-    <!-- 카풀 메인  크기 -->
-    <div class="comm-main-size">
+    <!-- 커뮤니티 메인 크기 -->
+    <div class="commu-main-size">
         <!--게시글 상단-->
         <div class="comm-header">
           <div class="navcontainer">
@@ -85,21 +86,21 @@
         </div>
 
       <!-- 제목/작성자/등록일 크기 -->
-      <div class="comm-detail-box1">
-        <div class="comm-detail-title">우리집 애기 귀엽죠 [1]</div>
-        <div class="comm-detail-info"><span>작성자 : 프린세스</span>
-          <sapn>등록일 : 2024-10-08</sapn>
+      <div class="commu-detail-box1">
+        <div class="commu-detail-title">10월18일 남양주 행복한유기견 센터 카풀멤버 구해요</div>
+        <div class="commu-detail-info"><span>작성자 : 안성재</span>
+          <sapn>등록일 : 2024-10-10</sapn>
         </div>
       </div>
 
       <!-- 글내용 크기 -->
-      <div class="comm-detail-box2">
-        <div class="comm-detail-content">
-          <div class="comm-detail-basicinfo">
-            <div class="comm-detail-basicinfo-title"></div>
-            <div>가끔보면 사람같은 우리 집 애..</div>
-            <div>개 팔자가 상팔자다</div>
-            <div>부럽다</div>
+      <div class="commu-detail-box2">
+        <div class="commu-detail-content">
+          <div class="commu-detail-basicinfo">
+            <div class="commu-detail-basicinfo-title"></div>
+            <div>10월 18일에 카풀 멤버 구합니다.</div>
+            <div>시간과 장소는 연락 후에 정하겠습니다.</div>
+            <div>자차 없으신 분 연락 주세요.</div>
           </div>
 
         </div>
@@ -108,29 +109,37 @@
       <br>
 
       <!-- 버튼 -->
-      <div class="comm-detail-box3">
+      <div class="commu-detail-box3">
         <div>
-          <button class="comm-modify-button" onclick="modifyAlert()">수정</button>　
-          <button class="comm-delete-button" onclick="deleteAlert()">삭제</button>
+          <button class="commu-modify-button" onclick="modifyAlert()">수정</button>　
+          <button class="commu-delete-button" onclick="deleteAlert()">삭제</button>
         </div>
-        <button class="comm-end-button" onclick="endAlert()">신고</button>
+        <button class="commu-end-button" onclick="endAlert()">신고</button>
       </div>
-
+      
       <br>
 
       <!-- 댓글창 -->
-      <div class="comm-detail-box4">
-        <div class="comm-detail-commentNum">댓글 2</div>
-        <div class="comm-detail-commentbox">
-          <div class="comm-detail-name">행복이</div>
-          <div class="comm-detail-comment">저희 집 애두요</div>
-          <div class="comm-detail-date">2024-10-08</div>
+      <div class="commu-detail-box4">
+        <div class="commu-detail-commentNum">댓글 2</div>
+        <div class="review-detail-commentbox">
+          <div class="review-detail-name">에드워드리</div>
+          <div class="review-detail-comment" id="review-comment">싫어요</div>
+          <div class="review-detail-comment" id="review-modifyInput" style="display:none;">
+            <input class="review-modify-comment">  
+            <button class="review-comment-button" onclick="editCommentBtnClcik()">등록</button>
+          </div>
+          <div id="review-comment-buttonBox">
+            <button class="review-comment-button" type="button" onclick="modifyCommentBtnClcik()">수정</button>
+            <button class="review-comment-button" type="button" onclick="CommentDeleteClick()">삭제</button>
+          </div>
+          <div class="review-detail-date">2024-10-14</div>
         </div>
         <br>
-        <div class="comm-detail-commentbox">
-          <div class="comm-detail-name">아가다</div>
-          <div class="comm-detail-comment">배고파</div>
-          <div class="comm-detail-date">2024-10-08</div>
+        <div class="commu-detail-commentbox">
+          <div class="commu-detail-name">아가다</div>
+          <div class="commu-detail-comment">저요!</div>
+          <div class="commu-detail-date">2024-10-10</div>
         </div>
       </div>
 
@@ -138,12 +147,11 @@
 
       <!-- 댓글입력 -->
       <form onsubmit="return Comment()">
-        <input class="comm-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
-        <button type="submit" class="comm-commentregi-button">등록</button>
+        <input class="commu-detail-commentregi" type="text" id="commentInput" placeholder="욕설 및 혐오감을 주는 댓글은 삼가주세요">　
+        <button type="submit" class="commu-commentregi-button">등록</button>
       </form>
 
       <br>
-    </div>
   </main>
 </body>
 
@@ -158,6 +166,5 @@
 </footer>
 
 <script defer src="../../js/main/header.js"></script>
-<script defer src="../../js/commu/commu-post-member.js"></script>
-
+<script defer src="../../js/commu/commu-post-member-comm-writer.js"></script>
 </html>
