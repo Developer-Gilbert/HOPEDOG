@@ -40,16 +40,6 @@ function checkPeopleInput() {
   }
 }
 
-// 글작성취소버튼
-function cancleClick() {
-  if (confirm('작성중인 글은 저장되지 않습니다. 정말로 취소하시겠습니까?')) {
-    console.log('취소되었습니다.');
-    window.location.href = '../../html/volun/volun-volundetail.html'
-  } else {
-    console.log('취소하지 않았습니다.');
-  }
-}
-
 // 썸머노트 크기 및 튜닝
 $(function () {
   $("#contents").summernote({
@@ -75,3 +65,13 @@ $(function () {
       ]
   });
 });
+
+// 글작성도중취소버튼
+function modifyCancle() {
+  if (confirm('정말 취소하시겠습니까? 수정중이던 글은 저장되지 않습니다')) {
+    console.log('봉사모집 글수정이 취소되었습니다.');
+    window.location.href = '../../html/volun/volun-volundetail.html'
+  } else {
+    console.log('봉사모집 글수정이 취소되지 않았습니다.');
+  }
+}
