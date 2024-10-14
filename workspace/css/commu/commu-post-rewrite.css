@@ -1,35 +1,47 @@
-.volun-main{
+.commu-main{
   width: 1080px;
   height: 1000px;
   background-color: white;
   margin: 0 auto;
 }
 
-.volun-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*게시글 상단*/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  display: flex; /* 가로로 나열 */
+  list-style-type: none;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+
+.comm-header{
+  height: 50px;
   width: 1080px;
-  height: 60px;
-  background-color: white;
-  border-top: solid 2px #9B805D;
-  border-bottom: solid 2px #9B805D;
+  border-bottom: 2px solid #9B805D; /* 아래쪽 경계선 추가 */
 }
 
-.volun-navList{
-  font-size: 18px;
-  font-weight: bold;
-  width: 300px;
-  text-align: center;
+.navcontainer {
+  height: 30px;
+  display: flex;
+  margin: 10px 0 1px 0;
+  align-items: center;
 }
 
-.volun-navList1{
-  font-size: 18px;
-  font-weight: bold;
-  width: 300px;
-  text-align: center;
+#navlist {
+  display: flex;
+  gap: 78px;
 }
 
+#navlist li{
+  margin: 0 10px;
+}
+
+/* 커뮤니티 글 작성 */
 .protect-wirtebanner{
   background-color: #F5EAD9;
   width: 1080px;
@@ -42,6 +54,7 @@
   border-top: 2px solid #9B805D;
 }
 
+/* 글작성 박스 */
 .protect-write-area{
   width: 800px;
   height: auto;
