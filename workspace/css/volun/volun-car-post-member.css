@@ -4,7 +4,7 @@ main{
   justify-content: center;
   align-items: center;
 }
-
+/* 카풀 메인 크기 */
 .volun-main-size{
   width: 1080px;
   min-height: 500px;
@@ -13,7 +13,7 @@ main{
   align-items: center;
 }
 
-
+/* 봉사,카풀 게시판 바 */
 .volun-nav{
   display: flex;
   justify-content: center;
@@ -39,6 +39,7 @@ main{
   text-align: center;
 }
 
+/* 제목/작성자/등록일 크기 */
 .volun-detail-box1{
   width: 1080px;
   height: 100px;
@@ -68,6 +69,7 @@ main{
   align-items: center;
 }
 
+/* 글내용 크기 */
 .volun-detail-box2{
   width: 1080px;
   min-height: 500px;
@@ -98,6 +100,7 @@ main{
   font-weight: bold;
 }
 
+/* 수정 , 삭제 , 신고 버튼 */
 .volun-detail-box3{
   width: 745px;
   height: auto;
@@ -106,6 +109,7 @@ main{
   align-items: center;
 }
 
+/* 수정 */
 .volun-modify-button{
   width: 100px;
   height: 50px;
@@ -122,6 +126,7 @@ main{
   color: white;
 }
 
+/* 삭제 */
 .volun-delete-button{
   width: 100px;
   height: 50px;
@@ -138,6 +143,7 @@ main{
   color: white;
 }
 
+/* 신고 */
 .volun-end-button{
   width: 100px;
   height: 50px;
@@ -154,6 +160,7 @@ main{
   color: white;
 }
 
+/* 댓글창 */
 .volun-detail-box4{
   width: 745px;
   height: auto;
