@@ -5,7 +5,7 @@ main{
   align-items: center;
 }
 
-.protection-main-size{
+.protect-main-size{
   width: 1080px;
   min-height: 1300px;
   display: flex;
@@ -14,7 +14,7 @@ main{
 }
 
 
-.protection-nav{
+.protect-nav{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,14 @@ main{
   border-bottom: solid 2px #9B805D;
 }
 
-.protection-navList{
+.protect-navList{
   font-size: 18px;
   font-weight: bold;
   width: 180px;
   text-align: center;
 }
 
-.protection-title1{
+.protect-title1{
   width: 1080px;
   height: 45px;
   background-color: white;
@@ -44,7 +44,7 @@ main{
   align-items: center;
 }
 
-.protection-title2{
+.protect-title2{
   width: 1080px;
   height: 35px;
   background-color: white;
@@ -53,7 +53,7 @@ main{
   justify-content: flex-end; 
 }
 
-.protection-postlist{
+.protect-postlist{
   width: 1000px;
   height: 1200px;
   background-color: white;
@@ -62,7 +62,7 @@ main{
   gap: 10px;
 }
 
-.protection-post{
+.protect-post{
   height: 350px;
   background-color: #F5EAD9;
   text-align: center;
@@ -74,20 +74,20 @@ main{
   gap: 5px;
 }
 
-.protection-post-intro{
+.protect-post-intro{
   display: flex;
   gap: 5px;
 }
 
-.protection-post-status{
+.protect-post-status{
   font-weight: bold;
 }
 
-.protection-post-title{
+.protect-post-title{
   font-weight: bold;
 }
 
-.protection-post-content{
+.protect-post-content{
   font-size: 12px;
 }
 
@@ -115,7 +115,7 @@ main{
   color: white;
 }
 
-.protection-pagenation{
+.protect-pagenation{
   width: 1000px;
   height: 80px;
   display: flex;
@@ -124,3 +124,7 @@ main{
   gap: 15px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; 
+}
