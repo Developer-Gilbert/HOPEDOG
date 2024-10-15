@@ -119,28 +119,38 @@
       
       <br>
 
-      <!-- 댓글창 -->
-      <div class="commu-detail-box4">
-        <div class="commu-detail-commentNum">댓글 2</div>
-        <div class="review-detail-commentbox">
-          <div class="review-detail-name">에드워드리</div>
-          <div class="review-detail-comment" id="review-comment">싫어요</div>
-          <div class="review-detail-comment" id="review-modifyInput" style="display:none;">
-            <input class="review-modify-comment">  
-            <button class="review-comment-button" onclick="editCommentBtnClcik()">등록</button>
+      <!-- 댓글 주석처리한건 백단할때 로그인/비로그인, 일반회원/센터회원, 본인작성/타인작성 if로 노출 결정 -->
+      <!-- 댓글창 / 자기댓글-->
+      <div class="commu-detail-commentbox">
+        <div class="commu-detail-name">행복이
+          <div id="commu-comment-buttonBox">
+            <button class="commu-comment-button" type="button" onclick="modifyCommentBtnClcik()">수정</button>
+            <button class="commu-comment-button" type="button" onclick="CommentDeleteClick()">삭제</button>
           </div>
-          <div id="review-comment-buttonBox">
-            <button class="review-comment-button" type="button" onclick="modifyCommentBtnClcik()">수정</button>
-            <button class="review-comment-button" type="button" onclick="CommentDeleteClick()">삭제</button>
+        </div>
+        <div class="commu-detail-comment" id="commu-comment">좋아요</div>
+        <div class="commu-detail-comment" id="commu-modifyInput" style="display:none;">
+          <input class="commu-modify-comment">
+          <button class="commu-comment-button" onclick="editCommentBtnClcik()">등록</button>
+        </div>
+        <div class="commu-detail-date">2024-10-14</div>
+      </div>
+
+      <!-- 댓글창 / 타인댓글-->
+      <div class="commu-detail-commentbox">
+        <div class="commu-detail-name">아가다
+          <div id="commu-comment-buttonBox">
+            <!-- <button class="commu-comment-button" type="button" onclick="modifyCommentBtnClcik()">수정</button> -->
+            <!-- <button class="commu-comment-button" type="button" onclick="CommentDeleteClick()">삭제</button> -->
+            <button class="commu-comment-button" type="button" onclick="CommentReportClick()">신고</button>
           </div>
-          <div class="review-detail-date">2024-10-14</div>
         </div>
-        <br>
-        <div class="commu-detail-commentbox">
-          <div class="commu-detail-name">아가다</div>
-          <div class="commu-detail-comment">저요!</div>
-          <div class="commu-detail-date">2024-10-10</div>
+        <div class="commu-detail-comment" id="commu-comment">싫어요</div>
+        <div class="commu-detail-comment" id="commu-modifyInput" style="display:none;">
+          <input class="commu-modify-comment">
+          <!-- <button class="commu-comment-button" onclick="editCommentBtnClcik()">등록</button> -->
         </div>
+        <div class="commu-detail-date">2024-10-14</div>
       </div>
 
       <br>

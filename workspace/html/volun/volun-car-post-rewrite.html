@@ -95,22 +95,30 @@
       <div class="car-write-area">
         <form action="링크" method="post">
           <br>
+          <div class="input-group">
+            <!-- 카테고리 선택 -->
+            <div class="category-select">
+              <label for="category">카테고리:</label>
+              <select id="category" name="category">
+                <option value="태워주세요">태워주세요</option>
+                <option value="태워줄게요">태워줄게요</option>
+              </select>
+            </div>
+            <br><br>
+            <!-- 썸머노트 -->
+            <div class="content">
+              <form method="post" action="">
+                <input id="subject" name="subject" class="adoptwrite-title" placeholder="제목을 입력해주세요">
+                <textarea id="contents" name="contents"></textarea>
+              </form>
+            </div>
 
-          <br><br>
-          <!-- 썸머노트 -->
-          <div class="content">
-            <form method="post" action="">
-              <input id="subject" name="subject" class="adoptwrite-title" placeholder="제목을 입력해주세요">
-              <textarea id="contents" name="contents"></textarea>
-            </form>
-          </div>
-
-          <!-- 등록/취소 버튼 -->
-          <div class="car-write-button-box">
-            <button class="review-write-button" type="button"
-              onclick="if(registration()) { location.href='../../html/volun/volun-car-main-member.html'; }">등록</button>
+            <!-- 등록/취소 버튼 -->
+            <div class="car-write-button-box">
+              <button class="review-write-button" type="button"
+                onclick="if(registration()) { location.href='../../html/volun/volun-car-main-member.html'; }">등록</button>
               <button class="review-cancle-button" type="button" onclick="Cancel()">취소</button>
-          </div>
+            </div>
         </form>
       </div>
     </div>

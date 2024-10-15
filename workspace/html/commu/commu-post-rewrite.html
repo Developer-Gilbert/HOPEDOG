@@ -79,19 +79,19 @@
   </header>
   <main>
     <div class="commu-main">
-        <!--게시글 상단-->
-        <div class="comm-header">
-          <div class="navcontainer">
-            <ul id="navlist">
-              <li><a id="current" href="" onfocus="blur()">전체</a></li>
-              <li><a href="" onfocus="blur()">인기</a></li>
-              <li><a href="" onfocus="blur()">자유</a></li>
-              <li><a href="" onfocus="blur()">봉사 후기</a></li>
-              <li><a href="" onfocus="blur()">질문</a></li>
-              <li><a href="" onfocus="blur()">자랑</a></li>
-            </ul>
-          </div>
+      <!--게시글 상단-->
+      <div class="comm-header">
+        <div class="navcontainer">
+          <ul id="navlist">
+            <li><a id="current" href="" onfocus="blur()">전체</a></li>
+            <li><a href="" onfocus="blur()">인기</a></li>
+            <li><a href="" onfocus="blur()">자유</a></li>
+            <li><a href="" onfocus="blur()">봉사 후기</a></li>
+            <li><a href="" onfocus="blur()">질문</a></li>
+            <li><a href="" onfocus="blur()">자랑</a></li>
+          </ul>
         </div>
+      </div>
 
 
       <!-- 커뮤니티 글 작성 -->
@@ -103,22 +103,33 @@
       <div class="protect-write-area">
         <form action="링크" method="post">
           <br>
+          <div class="input-group">
+            <!-- 카테고리 선택 -->
+            <div class="category-select">
+              <label for="category">카테고리:</label>
+              <select id="category" name="category">
+                <option value="인기">인기</option>
+                <option value="자유">자유</option>
+                <option value="봉사후기">봉사후기</option>
+                <option value="질문">질문</option>
+                <option value="자랑">자랑</option>
+              </select>
+            </div>
+            <br><br>
+            <!-- 썸머노트 -->
+            <div class="content">
+              <form method="post" action="">
+                <input id="subject" name="subject" class="adoptwrite-title" placeholder="제목을 입력해주세요">
+                <textarea id="contents" name="contents"></textarea>
+              </form>
+            </div>
 
-          <br><br>
-          <!-- 썸머노트 -->
-          <div class="content">
-            <form method="post" action="">
-              <input id="subject" name="subject" class="adoptwrite-title" placeholder="제목을 입력해주세요">
-              <textarea id="contents" name="contents"></textarea>
-            </form>
-          </div>
-
-          <!-- 등록/취소 버튼 -->
-          <div class="protect-write-button-box">
-            <button class="review-write-button" type="button"
-              onclick="if(registration()) { location.href='../../html/commu/commu-main-member.html'; }">등록</button>
+            <!-- 등록/취소 버튼 -->
+            <div class="protect-write-button-box">
+              <button class="review-write-button" type="button"
+                onclick="if(registration()) { location.href='../../html/commu/commu-main-member.html'; }">등록</button>
               <button class="review-cancle-button" type="button" onclick="Cancel()">취소</button>
-          </div>
+            </div>
         </form>
       </div>
     </div>
@@ -136,6 +147,6 @@
 </footer>
 
 <script defer src="../../js/main/header.js"></script>
-<script defer src="../../js/commu/commu-post-rewrite.js"></script>
+<script defer src="../../js/commu/commu-post-write.js"></script>
 
 </html>
