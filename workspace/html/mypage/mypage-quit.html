@@ -68,6 +68,7 @@
   <main>
     <div class="member-profile-navbox">
       <nav>
+<<<<<<< HEAD
         <ul class="member-profile-nav-ul">
           <li id="profile"><a href="../../html/mypage/mypage-update.html">개인정보수정</li></a>
           <li id="posts"><a href="../../html/mypage/mypage-posts.html">작성글조회</li></a>
@@ -77,6 +78,16 @@
           <li id="auth"><a href="../../html/mypage/mypage-auth.html">2차인증</li></a>
           <li id="withdrawal"><a href="../../html/mypage/mypage-quit.html">회원탈퇴</li>
             <div id="choice"></div></a>
+=======
+        <ul class="center-member-profile-nav-ul">
+          <li id="profile"><a href="../center-mypage-profile-update.html"> 개인정보수정</a></li>
+          <li id="mywrite"><a href="../center-mypage-writeinfo-my.html"> 작성글조회</a></li>
+          <li id="volunteer"><a href="../center-mypage-volun-list.html"> 봉사</a></li>
+          <div id="choice"></div>
+          <li id="adopt"><a href="../center-mypage-adopt-adopt-list.html"> 입양</a></li>
+          <li id="notebox"><a href="../center-mypage-notebox-send.html"> 쪽지함</a></li>
+          <li id="withdrawal"><a href=""> 회원탈퇴</a></li>
+>>>>>>> main
         </ul>
       </nav>
     </div>
@@ -99,7 +110,8 @@
         <p>위 내용에 동의하면 아래에 "동의합니다"라고 적어주세요</p>
       </div>
       <div>
-        <input type="text" id="agreement" class="center-withdrawal-agreeinput" placeholder="동의합니다" oninput="checkAgreement()">
+        <input type="text" id="agreement" class="center-withdrawal-agreeinput" placeholder="동의합니다"
+          oninput="checkAgreement()">
       </div>
       <div>
         <button id="withdrawButton" class="button" onclick="showModal()">회원 탈퇴</button>
